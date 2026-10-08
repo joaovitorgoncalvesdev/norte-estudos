@@ -10,6 +10,6 @@ const [template, css, js, favicon] = await Promise.all([
 if (!template.includes('/* STYLES */') || !template.includes('/* SCRIPT */')) {
   throw new Error('Marcadores de CSS ou JavaScript ausentes no template.');
 }
-const html = template.replace('/* STYLES */', () => css).replace('/* SCRIPT */', () => js).replace('__FAVICON__', () => 'data:image/svg+xml,' + encodeURIComponent(favicon));
+const html = template.replace('/* STYLES */', () => css).replace('/* SCRIPT */', () => js).replace('__FAVICON__', () => 'data:image/svg+xml,' + encodeURIComponent(favicon.replace(/\r\n/g, '\n')));
 await writeFile(new URL('index.html', root), html, 'utf8');
 console.log('index.html atualizado.');
