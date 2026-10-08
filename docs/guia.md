@@ -23,7 +23,7 @@ Abra **Norte - Painel de Estudos.html** no navegador. O painel de estudos funcio
 - **Evolução:** períodos de 7, 14, 30 e 90 dias, comparação com o período anterior, tempo, acertos por matéria e calendário de atividade.
 - **Biblioteca:** links, notas e resumos ligados a matérias e assuntos; criação de cartões a partir de notas.
 - **Histórico:** busca, filtros, edição, exclusão com opção de desfazer e exportação CSV.
-- **Ajustes:** várias preparações separadas, perfil, tema claro/escuro, metas, disponibilidade e backups.
+- **Ajustes:** várias preparações separadas, preferências, tema claro/escuro, metas, disponibilidade e backups.
 
 ## Como as sugestões funcionam
 
@@ -85,11 +85,9 @@ Depois de começar, Abrir minipainel mostra o cronômetro dentro do Norte. Ele a
 Mantenha a aba original aberta. Fechá-la encerra a janela flutuante. Suspensão do aparelho e restrições do navegador podem atrasar os avisos; o tempo é recalculado quando o aplicativo retoma. O som depende do volume do aparelho e da permissão de reprodução do navegador. O tempo só entra no histórico após registrar a sessão.
 
 
-## Seu espaço, seu objetivo
+## Começar com simplicidade
 
-Ao entrar sem estudos cadastrados, a NORBIT conduz uma conversa guiada em cinco etapas, no próprio aparelho. Escolha concurso, faculdade, escola/vestibular, cursos/certificações ou aprendizado pessoal. Informe seu momento, curso ou área, objetivo, etapa, disciplinas, dificuldade principal e preferência de prática. Escolha dias, minutos, horário e tamanho dos blocos. Confira o resumo antes de criar seu espaço. A primeira semana é opcional, usa as disciplinas informadas e pode ser ajustada em Planejamento.
-
-O menu **Meu perfil** permite rever as escolhas. Cada espaço tem seu próprio perfil. Ao editar, matérias novas são acrescentadas sem repetir nomes; registros e planos existentes são preservados. Para mudar metas e horários, marque **Aplicar esta nova rotina**. O painel adapta os rótulos e mostra orientações conforme a necessidade informada. O armazenamento continua local, sem conta ou sincronização automática.
+Use **Criar minha preparação** para informar o objetivo, cargo, banca e data da prova, se desejar. Escolha uma base de matérias ou um edital vazio e ajuste metas e horários em **Ajustes**. A conversa de criação de perfis e a página Meu perfil foram removidas. Estudos, prazos, cartões e planos já cadastrados continuam disponíveis.
 
 ## Provas, entregas e projetos
 
@@ -97,4 +95,6 @@ Use **Prazos**, o painel de Hoje ou o Planejamento para cadastrar uma prova, tra
 
 ## NORBIT ao seu lado
 
-O mascote acompanha boas-vindas, configuração do perfil, espera da IA, acerto, incentivo após erro, foco e pausa. As animações respeitam movimento reduzido do aparelho. O tutorial ao vivo agora tem **96 passos em 15 áreas**, incluindo perfil, prazos, NORBIT AI, quantidade e dificuldade das questões, respostas comentadas, contexto, consentimento, alarmes, minipainel e janela flutuante. As respostas da IA no tutorial são exemplos locais, sem consumo de cota; as alterações da prática são descartadas ao sair.
+O mascote acompanha boas-vindas, espera da IA, acerto, incentivo após erro, foco e pausa. As animações respeitam movimento reduzido do aparelho. O tutorial ao vivo agora tem **91 passos em 14 áreas**, incluindo prazos, NORBIT AI, quantidade e dificuldade das questões, respostas comentadas, contexto, consentimento, alarmes, minipainel e janela flutuante. As respostas da IA no tutorial são exemplos locais, sem consumo de cota; as alterações da prática são descartadas ao sair.
+
+O novo mascote minimalista tem corpo branco arredondado, olhos simples e pequenas mãos. Ele acena e pisca suavemente; em movimento reduzido permanece estático. [Vídeo de apresentação, 6 segundos](../assets/norbit.mp4).
