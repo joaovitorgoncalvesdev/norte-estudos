@@ -20,7 +20,7 @@ const clone=v=>JSON.parse(JSON.stringify(v));
 const defaults=()=>({version:1,name:'Estudante',theme:'light',activeExam:null,exams:[],timer:null});
 let db=defaults(),storageProblem='',recoveryRaw=null,recoveryProtected=false;
 let route='hoje',planDate=today(),analyticsDays=14,sessionFilter='',topicFilter='',topicStatus='all',mistakeFilter='open',historyFilter='all',reviewCardId=null,cardAnswer=false,cardMode='review',undoState=null,toastTimeout,previewPlan=[],searchText='';
-const routes=[['hoje','Hoje'],['plano','Planejamento'],['edital','Meu edital'],['foco','Sessão de foco'],['questoes','Questões e erros'],['simulados','Simulados'],['revisoes','Revisões'],['cartoes','Cartões de memória'],['evolucao','Evolução'],['biblioteca','Biblioteca'],['historico','Histórico'],['ajustes','Ajustes'],['guia','Tutorial'],['ia','Assistente de IA']];
+const routes=[['hoje','Hoje'],['plano','Planejamento'],['edital','Meu edital'],['foco','Sessão de foco'],['questoes','Questões e erros'],['simulados','Simulados'],['revisoes','Revisões'],['cartoes','Cartões de memória'],['evolucao','Evolução'],['biblioteca','Biblioteca'],['historico','Histórico'],['ajustes','Ajustes'],['guia','Tutorial'],['ia','NORBIT AI']];
 const stages=[['new','Não iniciado'],['learning','Em estudo'],['covered','Teoria concluída'],['mastered','Consolidado']];
 // Live product tours use a temporary preparation. Study data never leaves localStorage.
 const TOUR_STORE='norte.tour.v2';
@@ -169,6 +169,8 @@ function subjectOptions(sel){return exam().subjects.filter(s=>!s.archived||s.id=
 function topicOptions(sid,sel){return `<option value="">Estudo geral da matéria</option>`+(subject(sid)?.topics||[]).map(t=>`<option value="${t.id}" ${t.id===sel?'selected':''}>${esc(t.name)}</option>`).join('')}
 function selection(sid,tid){return `<label>Matéria<select name="subjectId" id="form-subject" required>${subjectOptions(sid)}</select></label><label>Assunto<select name="topicId" id="form-topic">${topicOptions(sid||exam().subjects.find(s=>!s.archived)?.id,tid)}</select></label>`}
 function render(){
+  document.body.classList.toggle('norbit-active',route==='ia');
+  if($('#norbit-launcher'))$('#norbit-launcher').setAttribute('aria-current',route==='ia'?'page':'false');
   document.documentElement.dataset.theme=db.theme;
   $('#avatar').textContent=db.name.trim().charAt(0).toUpperCase()||'E';
   $('#exam-select').innerHTML=db.exams.map(e=>`<option value="${e.id}" ${e.id===db.activeExam?'selected':''}>${esc(e.name)}</option>`).join('')||'<option>Comece sua preparação</option>';
