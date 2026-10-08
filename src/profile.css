@@ -6,3 +6,5 @@
 @media(prefers-contrast:more){.profile-choices button,.profile-conversation{border-color:var(--ink)}}
 
 body.tour-timer #timer-dock{visibility:visible}.profile-conversation .checkbox-label input{margin-top:0;flex:none}.profile-header .norbit-identity{min-width:0}
+
+@media(max-width:700px){.profile-banner{display:grid;grid-template-columns:48px minmax(0,1fr);align-items:start}.profile-banner>button{grid-column:2;justify-self:start;margin-left:0}.profile-banner>div:nth-child(2){width:100%}}
