@@ -60,6 +60,12 @@ A interface se adapta ao celular e respeita a preferência de reduzir movimento.
 O botão de demonstração cria uma preparação separada com dados fictícios. Seus dados reais permanecem preservados. Para remover o exemplo, selecione essa preparação e use **Ajustes > Excluir esta preparação**.
 
 
-## Tutorial dentro do aplicativo
+## Tutorial ao vivo
 
-Selecione **Tutorial** no menu para percorrer sete passos: objetivo, edital, planejamento, foco e questões, revisões e cartões, resultados e materiais, backup e continuidade. Você pode escolher qualquer passo, avançar, voltar e abrir a área relacionada. O passo atual fica salvo neste navegador. Ao concluir, o convite da página Hoje desaparece, mas o tutorial continua acessível pelo menu.
+Selecione **Tutorial** no menu para iniciar o tour completo ou escolher uma das 12 áreas. Cada passo abre a tela correspondente, destaca o controle e mostra uma orientação próxima a ele. Nos passos de ação, clique no botão indicado: o tour avança ao abrir o formulário ou concluir a ação. Os exemplos salvos aparecem de verdade na preparação temporária.
+
+O botão **Ajuda**, no topo do painel, abre o tour da tela atual. Use **Anterior** para rever um passo, **Pular passo** ou **Próximo** para continuar e **Sair** ou a tecla **Esc** para encerrar. Seu progresso fica salvo e pode ser retomado pelo tutorial.
+
+Toda a prática acontece em uma preparação de demonstração mantida apenas na memória. Seus registros reais não são substituídos. Recarregar a página descarta a demonstração; ao retomar, os exemplos são recriados. Exportação e importação são explicadas durante o tour, sem baixar um backup de demonstração ou substituir dados.
+
+O destaque acompanha os controles ao rolar ou redimensionar a tela. As animações respeitam a preferência de movimento reduzido do aparelho.
