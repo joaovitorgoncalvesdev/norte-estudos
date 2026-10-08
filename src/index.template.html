@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#f5f6f8">
+<title>Norte | Seu espaço de estudos</title>
+<style>/* STYLES */</style>
+</head>
+<body>
+<a class="skip" href="#content">Ir para o conteúdo</a>
+<div class="shell">
+  <aside class="sidebar" aria-label="Navegação principal">
+    <a class="brand" href="#hoje"><span class="brand-mark">n</span><span>norte<span class="brand-caption">SEU ESPAÇO DE ESTUDOS</span></span></a>
+    <label class="project-label" for="exam-select">Minha preparação</label>
+    <select id="exam-select" aria-label="Concurso ativo"></select>
+    <nav id="nav"></nav>
+    <div class="sidebar-bottom"><div class="local-state"><span class="state-dot"></span>Salvo neste aparelho</div><button class="quiet" data-action="theme">Alternar aparência</button></div>
+  </aside>
+  <div class="workspace">
+    <header class="toolbar"><button id="menu-toggle" class="quiet" aria-label="Abrir navegação" aria-expanded="false">Menu</button><div class="breadcrumb" id="breadcrumb">Seu espaço / Hoje</div><div class="toolbar-actions"><button class="quiet" data-action="search">Buscar <kbd>Ctrl K</kbd></button><button class="primary small" data-action="session">+ Registrar</button><span class="avatar" id="avatar">E</span></div></header>
+    <main id="content" tabindex="-1"></main>
+  </div>
+</div>
+<div id="timer-dock" hidden></div>
+<dialog id="modal" aria-labelledby="modal-title"></dialog>
+<div id="toast" role="status" aria-live="polite"></div>
+<input type="file" id="import-file" accept=".json,application/json" hidden>
+<script>/* SCRIPT */</script>
+</body>
+</html>
