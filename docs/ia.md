@@ -15,7 +15,7 @@ Os exercícios gerados são treino informal e não entram nas estatísticas. Fec
 - API: Cloudflare Worker `norte-gemini`, arquivo `worker/index.js`.
 - Chave pública do Turnstile e endereço da API: `src/ai.js`.
 - Segredos no Cloudflare: `GEMINI_API_KEY` e `TURNSTILE_SECRET`. Nunca cadastrar como texto simples nem colocar no GitHub.
-- Modelo configurável pela variável `GEMINI_MODEL`; inicialmente `gemini-2.5-flash`.
+- Modelo configurável pela variável `GEMINI_MODEL`; inicialmente `gemini-3.5-flash-lite`.
 - Cota global persistente e atômica: 30 tentativas por dia, 6 por minuto. Por endereço de rede: 10 por dia e 2 por minuto. Reinício diário à meia-noite UTC. Redes compartilhadas dividem a cota por endereço.
 - Tentativas reservadas antes de chamar o Gemini também contam em falhas; isso impede repetição de pedidos que ainda possam ser cobrados.
 - Turnstile validado no servidor, com hostname e ação, antes de usar a cota do Gemini.
