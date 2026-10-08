@@ -1,6 +1,6 @@
 # Norte: seu espaço de estudos
 
-Abra **Norte - Painel de Estudos.html** no navegador. O sistema funciona sem instalação e sem conexão à internet. Os links que você adicionar à biblioteca precisam de internet para serem acessados.
+Abra **Norte - Painel de Estudos.html** no navegador. O painel de estudos funciona sem instalação e sem conexão à internet; o Assistente de IA é opcional e precisa da versão publicada com internet. Os links que você adicionar à biblioteca precisam de internet para serem acessados.
 
 ## Comece por aqui
 
@@ -69,3 +69,8 @@ O botão **Ajuda**, no topo do painel, abre o tour da tela atual. Use **Anterior
 Toda a prática acontece em uma preparação de demonstração mantida apenas na memória. Seus registros reais não são substituídos. Recarregar a página descarta a demonstração; ao retomar, os exemplos são recriados. Exportação e importação são explicadas durante o tour, sem baixar um backup de demonstração ou substituir dados.
 
 O destaque acompanha os controles ao rolar ou redimensionar a tela. As animações respeitam a preferência de movimento reduzido do aparelho.
+
+
+## Assistente de IA
+
+Escolha uma ferramenta, confira o conteúdo a enviar e autorize o processamento pelo Gemini. Revise a resposta e os cartões antes de salvar. Consulte [o guia do assistente](ia.md).
