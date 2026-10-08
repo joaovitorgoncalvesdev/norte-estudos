@@ -1,13 +1,19 @@
-# Assistente Gemini no Norte
+# NORBIT AI no Norte
 
-O menu **Assistente de IA** oferece explicações de dificuldades, quatro cartões editáveis e três questões inéditas por pedido. Em **Questões e erros**, o botão **Entender com IA** leva a dificuldade para o assistente; confira o texto antes de enviar.
+O menu **NORBIT AI** oferece explicações de dificuldades, quatro cartões editáveis e três questões inéditas por pedido. Em **Questões e erros**, o botão **Entender com IA** leva a dificuldade para o assistente; confira o texto antes de enviar.
 
 1. Escolha a ferramenta e cole de 20 a 8.000 caracteres.
-2. Autorize o envio apenas desse trecho ao Google Gemini e ao Cloudflare.
-3. Aguarde a verificação de segurança e clique em **Gerar com Gemini**.
+2. Autorize o envio apenas desse trecho ao Google e ao Cloudflare.
+3. Aguarde a verificação de segurança e clique em **Enviar**.
 4. Confira o resultado no material original. Nos cartões, edite, selecione uma matéria e salve apenas os cartões desejados.
 
 Os exercícios gerados são treino informal e não entram nas estatísticas. Fechar ou recarregar a página descarta a resposta que ainda não foi salva. Seus registros e backups continuam neste navegador.
+
+## Interface e atalhos
+
+A NORBIT tem uma interface de conversa, sugestões de estudo, campo de texto e respostas organizadas. A bolha com o símbolo da NORBIT abre a IA em todas as áreas. Use **Ctrl + Enter** (ou **Command + Enter**) para enviar após autorizar e concluir a verificação. **Nova conversa** limpa o texto e a resposta desta sessão; não apaga cartões salvos.
+
+As animações acompanham os estados de envio e resposta, com versões para movimento reduzido. A aparência acompanha o tema claro ou escuro do painel. Privacidade e limites ficam disponíveis no rodapé do campo de envio.
 
 ## Hospedagem e proteção
 
@@ -32,3 +38,4 @@ Para compilar a interface: `npm run build`. Para publicar a API usando a ferrame
 O segredo do Turnstile corresponde ao widget **Norte · Assistente Gemini**, autorizado para `joaovitorgoncalvesdev.github.io`. Se mudar o domínio, atualizar hostname do widget, origem permitida e verificação de hostname no Worker.
 
 Se uma chave for exposta em uma conversa, arquivo ou repositório, revogue-a no provedor e cadastre outra diretamente no serviço. Atualizar `src/ai.js` nunca é necessário para trocar a chave do Gemini.
+
