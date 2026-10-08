@@ -1,6 +1,6 @@
 # Norte — Seu espaço de estudos
 
-Um painel pessoal para organizar a preparação para concursos, acompanhar o aprendizado e transformar o edital em uma rotina de estudo.
+Uma plataforma pessoal para organizar estudos de faculdade, concursos, escola, certificações e aprendizado por conta própria.
 
 **[Abrir o site](https://joaovitorgoncalvesdev.github.io/norte-estudos/)** · **[Guia de uso](docs/guia.md)**
 
@@ -8,7 +8,7 @@ Um painel pessoal para organizar a preparação para concursos, acompanhar o apr
 
 ## Funcionalidades
 
-- Tutorial ao vivo em 12 áreas, com controles destacados, cliques guiados e progresso salvo.
+- Tutorial ao vivo com 96 passos em 15 áreas, com controles destacados, cliques guiados e progresso salvo.
 - Favicon com a marca Norte, incluído no HTML para uso offline.
 - Visão do dia com metas, tarefas e revisões.
 - Planejamento conforme disponibilidade, prioridades e desempenho.
