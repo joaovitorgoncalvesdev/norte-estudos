@@ -2,7 +2,7 @@
 
 Um painel pessoal para organizar a preparação para concursos, acompanhar o aprendizado e transformar o edital em uma rotina de estudo.
 
-**[Abrir o site](https://norte-estudos.jv71.chatgpt.site)** · **[Guia de uso](docs/guia.md)**
+**[Abrir o site](https://joaovitorgoncalvesdev.github.io/norte-estudos/)** · **[Guia de uso](docs/guia.md)**
 
 ![Painel Norte no computador](docs/desktop.png)
 
