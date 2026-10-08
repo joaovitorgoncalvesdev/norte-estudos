@@ -58,3 +58,8 @@ Exporte um backup regularmente e antes de limpar os dados do navegador. Para tro
 A interface se adapta ao celular e respeita a preferência de reduzir movimento. Os campos e diálogos podem ser usados com teclado. A apresentação usa CSS próprio inspirado nos princípios de apple-design; não utiliza componentes oficiais da Apple.
 
 O botão de demonstração cria uma preparação separada com dados fictícios. Seus dados reais permanecem preservados. Para remover o exemplo, selecione essa preparação e use **Ajustes > Excluir esta preparação**.
+
+
+## Tutorial dentro do aplicativo
+
+Selecione **Tutorial** no menu para percorrer sete passos: objetivo, edital, planejamento, foco e questões, revisões e cartões, resultados e materiais, backup e continuidade. Você pode escolher qualquer passo, avançar, voltar e abrir a área relacionada. O passo atual fica salvo neste navegador. Ao concluir, o convite da página Hoje desaparece, mas o tutorial continua acessível pelo menu.
