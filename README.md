@@ -64,7 +64,8 @@ Publique o `index.html` em uma hospedagem de sites estáticos. O aplicativo não
 
 ![Painel Norte no celular](docs/celular.png)
 
-## Assistente de IA
+## NORBIT AI
 
-O Norte agora oferece explicações de dificuldades, cartões editáveis e questões de treino com Gemini. O painel continua salvando no navegador; a IA é opcional, requer internet e envia apenas o conteúdo escolhido após autorização. Chaves ficam no Cloudflare, nunca no GitHub. Veja [configuração e uso](docs/ia.md).
+O Norte agora oferece explicações de dificuldades, cartões editáveis e questões de treino com NORBIT AI. O painel continua salvando no navegador; a IA é opcional, requer internet e envia apenas o conteúdo escolhido após autorização. Chaves ficam no Cloudflare, nunca no GitHub. Veja [configuração e uso](docs/ia.md).
+
 
