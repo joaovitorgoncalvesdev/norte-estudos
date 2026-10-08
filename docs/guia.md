@@ -83,3 +83,18 @@ Na Sessão de foco, ative o som e escolha após quantos minutos de estudo quer r
 Depois de começar, Abrir minipainel mostra o cronômetro dentro do Norte. Ele acompanha a navegação entre áreas; arraste pelo cabeçalho para reposicionar. Flutuar sobre outras janelas abre uma janela sempre visível em navegadores com Document Picture-in-Picture, como versões compatíveis de Chrome e Edge no computador. Se o recurso não estiver disponível, use o minipainel. Ambas as versões permitem pausar, continuar e registrar a sessão.
 
 Mantenha a aba original aberta. Fechá-la encerra a janela flutuante. Suspensão do aparelho e restrições do navegador podem atrasar os avisos; o tempo é recalculado quando o aplicativo retoma. O som depende do volume do aparelho e da permissão de reprodução do navegador. O tempo só entra no histórico após registrar a sessão.
+
+
+## Seu espaço, seu objetivo
+
+Ao entrar sem estudos cadastrados, a NORBIT conduz uma conversa guiada em cinco etapas, no próprio aparelho. Escolha concurso, faculdade, escola/vestibular, cursos/certificações ou aprendizado pessoal. Informe seu momento, curso ou área, objetivo, etapa, disciplinas, dificuldade principal e preferência de prática. Escolha dias, minutos, horário e tamanho dos blocos. Confira o resumo antes de criar seu espaço. A primeira semana é opcional, usa as disciplinas informadas e pode ser ajustada em Planejamento.
+
+O menu **Meu perfil** permite rever as escolhas. Cada espaço tem seu próprio perfil. Ao editar, matérias novas são acrescentadas sem repetir nomes; registros e planos existentes são preservados. Para mudar metas e horários, marque **Aplicar esta nova rotina**. O painel adapta os rótulos e mostra orientações conforme a necessidade informada. O armazenamento continua local, sem conta ou sincronização automática.
+
+## Provas, entregas e projetos
+
+Use **Prazos**, o painel de Hoje ou o Planejamento para cadastrar uma prova, trabalho, projeto ou revisão. Um prazo associado a uma disciplina aumenta sua prioridade nos 14 dias anteriores, inclusive se estiver atrasado. Concluir ou reabrir um prazo não lança minutos nem questões no histórico. Gere um plano novo e revise a sugestão antes de aplicar.
+
+## NORBIT ao seu lado
+
+O mascote acompanha boas-vindas, configuração do perfil, espera da IA, acerto, incentivo após erro, foco e pausa. As animações respeitam movimento reduzido do aparelho. O tutorial ao vivo agora tem **96 passos em 15 áreas**, incluindo perfil, prazos, NORBIT AI, quantidade e dificuldade das questões, respostas comentadas, contexto, consentimento, alarmes, minipainel e janela flutuante. As respostas da IA no tutorial são exemplos locais, sem consumo de cota; as alterações da prática são descartadas ao sair.

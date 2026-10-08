@@ -13,7 +13,7 @@ Os exercícios gerados são treino informal e não entram nas estatísticas. Fec
 
 Escolha de **1 a 10 questões** e a dificuldade **Fácil, Médio ou Difícil** antes de enviar. O nível altera o tipo de raciocínio pedido; a quantidade escolhida é validada no servidor. As questões aparecem uma por vez. Marque uma alternativa e clique em **Responder questão**. A NORBIT mostra se acertou ou errou, destaca a alternativa correta e explica o raciocínio. **Entenda cada alternativa** abre as justificativas das quatro opções. A dica final ajuda a reconhecer a regra em outro exercício.
 
-Use os botões de questão ou **Anterior / Próxima** para navegar. Ao responder às três, aparece o total de acertos. **Recomeçar este treino** permite tentar as mesmas questões novamente, sem gastar outro pedido à IA. O resultado permanece apenas nesta sessão, sem alterar as estatísticas de estudo.
+Use os botões de questão ou **Anterior / Próxima** para navegar. Ao responder a todas as questões, aparece o total de acertos. **Recomeçar este treino** permite tentar as mesmas questões novamente, sem gastar outro pedido à IA. O resultado permanece apenas nesta sessão, sem alterar as estatísticas de estudo.
 
 ## Interface e atalhos
 
@@ -23,9 +23,9 @@ As animações acompanham os estados de envio e resposta, com versões para movi
 
 ## Contexto da preparação
 
-Ative **Usar minha preparação como contexto** para personalizar a resposta. O resumo inclui a preparação ativa, cargo, banca, data da prova, metas, até 15 matérias com progresso, resultados agregados dos últimos 7 dias, até 12 atividades dos próximos 7 dias e 3 prioridades calculadas pelo painel.
+Ative **Usar minha preparação como contexto** para personalizar a resposta. O resumo inclui objetivo, momento, curso/área, etapa, base declarada, ajuda desejada e preferência de prática do espaço ativo; até 8 prazos em aberto; cargo e banca quando for concurso; data-alvo, metas, até 15 matérias com progresso, resultados agregados dos últimos 7 dias, até 12 atividades dos próximos 7 dias e 3 prioridades calculadas pelo painel.
 
-**Conferir o contexto que será enviado** mostra o resumo antes do envio. O consentimento passa a incluir texto e contexto. Sem essa opção, apenas o texto é enviado. Anotações dos registros, links de materiais, perfil pessoal e backups não entram no resumo. Ao trocar a preparação, o resumo é atualizado. O servidor processa o contexto no pedido e não o armazena.
+**Conferir o contexto que será enviado** mostra o resumo antes do envio. O consentimento passa a incluir texto e contexto. Sem essa opção, apenas o texto é enviado. Anotações dos registros, links de materiais, nome pessoal e backups não entram no resumo. Ao trocar a preparação, o resumo é atualizado. O servidor processa o contexto no pedido e não o armazena.
 
 O contexto orienta a linguagem e os próximos passos; ele não altera metas ou atividades e não substitui o material usado para criar as questões. Cada navegador usa seus próprios registros locais.
 
@@ -52,6 +52,3 @@ Para compilar a interface: `npm run build`. Para publicar a API usando a ferrame
 O segredo do Turnstile corresponde ao widget **Norte · Assistente Gemini**, autorizado para `joaovitorgoncalvesdev.github.io`. Se mudar o domínio, atualizar hostname do widget, origem permitida e verificação de hostname no Worker.
 
 Se uma chave for exposta em uma conversa, arquivo ou repositório, revogue-a no provedor e cadastre outra diretamente no serviço. Atualizar `src/ai.js` nunca é necessário para trocar a chave do Gemini.
-
-
-
