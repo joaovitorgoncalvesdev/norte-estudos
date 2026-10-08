@@ -13,7 +13,8 @@ Um painel pessoal para organizar a preparação para concursos, acompanhar o apr
 - Visão do dia com metas, tarefas e revisões.
 - Planejamento conforme disponibilidade, prioridades e desempenho.
 - Organização do edital por disciplinas e assuntos.
-- Sessões de foco com cronômetro e registro de estudo.
+- Sessões de foco com alarme ao terminar, lembrete por minutos, teste de som e registro de estudo.
+- Minipainel arrastável entre telas e janela sempre visível com Document Picture-in-Picture em navegadores compatíveis.
 - Questões, caderno de erros e simulados.
 - Revisões espaçadas e cartões de memória.
 - Evolução, biblioteca e histórico.
