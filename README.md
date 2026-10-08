@@ -1,6 +1,6 @@
 # Norte — Seu espaço de estudos
 
-Uma plataforma pessoal para organizar estudos de faculdade, concursos, escola, certificações e aprendizado por conta própria.
+Um painel pessoal para organizar sua preparação, planejamento, foco, questões e revisões.
 
 **[Abrir o site](https://joaovitorgoncalvesdev.github.io/norte-estudos/)** · **[Guia de uso](docs/guia.md)**
 
@@ -8,7 +8,7 @@ Uma plataforma pessoal para organizar estudos de faculdade, concursos, escola, c
 
 ## Funcionalidades
 
-- Tutorial ao vivo com 96 passos em 15 áreas, com controles destacados, cliques guiados e progresso salvo.
+- Tutorial ao vivo com 91 passos em 14 áreas, com controles destacados, cliques guiados e progresso salvo.
 - Favicon com a marca Norte, incluído no HTML para uso offline.
 - Visão do dia com metas, tarefas e revisões.
 - Planejamento conforme disponibilidade, prioridades e desempenho.
@@ -71,3 +71,9 @@ O Norte oferece explicações, cartões editáveis e questões de treino com NOR
 
 
 
+
+## Mascote NORBIT
+
+Um companheiro minimalista com movimentos suaves de boas-vindas, espera, acerto, incentivo, foco e pausa. As animações respeitam movimento reduzido. [Assistir ao vídeo do mascote](assets/norbit.mp4).
+
+A criação guiada de perfis foi retirada. Novas preparações usam o formulário simples; os estudos existentes continuam preservados.
