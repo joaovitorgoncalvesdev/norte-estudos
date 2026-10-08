@@ -1,0 +1,11 @@
+{
+  "name": "norte-estudos",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Painel pessoal de estudos para concursos, com funcionamento offline.",
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "check": "node --check src/app.js"
+  }
+}
