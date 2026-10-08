@@ -8,6 +8,8 @@ Um painel pessoal para organizar a preparação para concursos, acompanhar o apr
 
 ## Funcionalidades
 
+- Tutorial em 7 passos, com progresso salvo e acesso permanente pelo menu.
+- Favicon com a marca Norte, incluído no HTML para uso offline.
 - Visão do dia com metas, tarefas e revisões.
 - Planejamento conforme disponibilidade, prioridades e desempenho.
 - Organização do edital por disciplinas e assuntos.
@@ -44,6 +46,7 @@ src/index.template.html    Estrutura da página
 src/styles.css             Estilos e responsividade
 src/app.js                 Interface e regras de estudo
 scripts/build.mjs          Geração do HTML completo
+favicon.svg                Ícone da marca
 docs/                      Guia e imagens
 ```
 
