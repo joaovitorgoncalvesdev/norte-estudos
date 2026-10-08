@@ -74,3 +74,12 @@ O destaque acompanha os controles ao rolar ou redimensionar a tela. As animaçõ
 ## Assistente de IA
 
 Escolha uma ferramenta, confira o conteúdo a enviar e autorize o processamento pelo Gemini. Revise a resposta e os cartões antes de salvar. Consulte [o guia do assistente](ia.md).
+
+
+## Alarmes e cronômetro flutuante
+
+Na Sessão de foco, ative o som e escolha após quantos minutos de estudo quer receber um lembrete. Use 0 para desativar o lembrete. Nos blocos com contagem regressiva, o tempo do lembrete deve ser menor que a duração do bloco; o aviso de conclusão toca quando chega a zero. O cronômetro livre usa o lembrete, sem término automático. Testar som permite conferir o volume e liberar o áudio após recarregar a página.
+
+Depois de começar, Abrir minipainel mostra o cronômetro dentro do Norte. Ele acompanha a navegação entre áreas; arraste pelo cabeçalho para reposicionar. Flutuar sobre outras janelas abre uma janela sempre visível em navegadores com Document Picture-in-Picture, como versões compatíveis de Chrome e Edge no computador. Se o recurso não estiver disponível, use o minipainel. Ambas as versões permitem pausar, continuar e registrar a sessão.
+
+Mantenha a aba original aberta. Fechá-la encerra a janela flutuante. Suspensão do aparelho e restrições do navegador podem atrasar os avisos; o tempo é recalculado quando o aplicativo retoma. O som depende do volume do aparelho e da permissão de reprodução do navegador. O tempo só entra no histórico após registrar a sessão.
