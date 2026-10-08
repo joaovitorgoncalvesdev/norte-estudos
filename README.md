@@ -66,6 +66,7 @@ Publique o `index.html` em uma hospedagem de sites estáticos. O aplicativo não
 
 ## NORBIT AI
 
-O Norte agora oferece explicações de dificuldades, cartões editáveis e questões de treino com NORBIT AI. O painel continua salvando no navegador; a IA é opcional, requer internet e envia apenas o conteúdo escolhido após autorização. Chaves ficam no Cloudflare, nunca no GitHub. Veja [configuração e uso](docs/ia.md).
+O Norte oferece explicações, cartões editáveis e questões de treino com NORBIT AI. Você pode escolher de 1 a 10 questões, a dificuldade e usar o contexto da preparação ativa. O painel continua salvando no navegador; a IA é opcional, requer internet e envia o conteúdo escolhido e, se ativado e autorizado, um resumo da preparação. Chaves ficam no Cloudflare, nunca no GitHub. Veja [configuração e uso](docs/ia.md).
+
 
 
