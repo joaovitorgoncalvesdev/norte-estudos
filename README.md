@@ -8,7 +8,7 @@ Um painel pessoal para organizar a preparação para concursos, acompanhar o apr
 
 ## Funcionalidades
 
-- Tutorial em 7 passos, com progresso salvo e acesso permanente pelo menu.
+- Tutorial ao vivo em 12 áreas, com controles destacados, cliques guiados e progresso salvo.
 - Favicon com a marca Norte, incluído no HTML para uso offline.
 - Visão do dia com metas, tarefas e revisões.
 - Planejamento conforme disponibilidade, prioridades e desempenho.
@@ -20,6 +20,12 @@ Um painel pessoal para organizar a preparação para concursos, acompanhar o apr
 - Múltiplas preparações, busca e aparência clara ou escura.
 - Backup em JSON, importação e exportação de registros em CSV.
 - Interface adaptada a computadores e celulares.
+
+## Aprender na prática
+
+Use **Tutorial** no menu para escolher uma área ou iniciar o tour completo. O botão **Ajuda** abre o tour da tela atual. A prática usa uma preparação temporária: cadastros, cronômetro e registros de demonstração são descartados ao sair, sem alterar seus estudos reais. Você pode avançar, voltar, pular passos e retomar depois.
+
+![Tour ao vivo do Norte](docs/tour.png)
 
 ## Usar no computador
 
