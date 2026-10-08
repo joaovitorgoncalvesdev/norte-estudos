@@ -6,3 +6,8 @@ node_modules/
 backups/
 .DS_Store
 Thumbs.db
+
+.wrangler/
+.dev.vars*
+.env*
+node_modules/
