@@ -1,0 +1,26 @@
+/* One quiet motion language across planning, practice and progress. */
+:root{--motion-fast:130ms;--motion-settle:240ms;--motion-ease:cubic-bezier(.2,.8,.2,1)}
+button:not(.flashcard),.nav-item,summary{transition:background-color var(--motion-fast),border-color var(--motion-fast),color var(--motion-fast),box-shadow var(--motion-settle),transform var(--motion-fast) var(--motion-ease)}
+button:active:not(:disabled):not(.flashcard){transform:scale(.98);transition-duration:70ms}
+input,select,textarea{transition:border-color var(--motion-fast),box-shadow var(--motion-fast)}
+input:focus,select:focus,textarea:focus{border-color:var(--blue)}
+.panel{box-shadow:0 2px 8px #15233c03,inset 0 1px 0 #ffffff08}
+.panel h2,.dialog-header h2{letter-spacing:-.025em;text-wrap:balance}
+.panel p,.dialog-header p{ text-wrap:pretty }
+.chart-bar{transform-origin:center bottom}.progress>span{transform-origin:left center}
+.sidebar{transition:transform 280ms var(--motion-ease)}
+dialog::backdrop{animation:site-backdrop 200ms ease-out}
+@keyframes site-backdrop{from{opacity:0}to{opacity:1}}
+.ai-option,.norbit-quiz .ai-option{transition:background-color var(--motion-fast),border-color var(--motion-fast),box-shadow var(--motion-fast)}
+.ai-option:has(input:focus-visible){outline:2px solid var(--blue);outline-offset:2px}
+.task,.resource,.search-result{transition:background-color var(--motion-fast),border-color var(--motion-fast)}
+@media(hover:hover) and (pointer:fine){
+ .panel:has(>.panel-head) {transition:border-color var(--motion-settle),box-shadow var(--motion-settle)}
+ .panel:has(>.panel-head):hover{box-shadow:0 6px 24px #15233c08,inset 0 1px 0 #ffffff08}
+ .search-result:hover{background:var(--blue-soft)}
+}
+@media(prefers-reduced-motion:reduce){
+ *,*::before,*::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}
+ button:active:not(:disabled):not(.flashcard){transform:none}
+}
+@media(prefers-contrast:more){.panel{box-shadow:none}input:focus,select:focus,textarea:focus{outline:2px solid var(--blue);outline-offset:2px}}

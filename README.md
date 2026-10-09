@@ -8,6 +8,7 @@ Um painel pessoal para organizar sua preparação, planejamento, foco, questões
 
 ## Funcionalidades
 
+- Movimento consistente em painéis, gráficos, formulários, avisos e controles, com animações nativas leves e respeito ao movimento reduzido do aparelho.
 - Tutorial ao vivo com 95 passos em 14 áreas, com controles destacados, cliques guiados e progresso salvo.
 - Favicon com a marca Norte, incluído no HTML para uso offline.
 - Visão do dia com metas, tarefas e revisões.

@@ -112,3 +112,8 @@ Nos flashcards, clique ou use espaço para virar. O movimento pode ser invertido
 
 ## Menu por atividade
 O menu tem ícones e quatro grupos: Organizar (Hoje, Planejamento, Meu edital e Prazos), Estudar (Foco, NORBIT AI, Questões, Simulados, Revisões e Cartões), Acompanhar (Evolução e Histórico) e Recursos (Biblioteca, Tutorial e Ajustes). O destaque mostra a tela atual. Os contadores de revisões e cartões indicam filas separadas. No celular, abra Menu; escolha uma área ou use Escape para fechar. A lista rola sem esconder sua preparação e os controles de aparência.
+
+## Movimento e conforto visual
+As telas apresentam painéis e gráficos com entradas suaves. Formulários, avisos, opções de resposta e o menu usam feedback consistente; todos os controles continuam disponíveis durante o movimento. Painéis fora da tela só animam quando aparecem, sem adicionar vídeos ou bibliotecas. Os números dos gráficos e seus registros permanecem os mesmos.
+
+Se preferir uma interface estática, ative **reduzir movimento** nas configurações de acessibilidade do aparelho ou navegador. O Norte respeita essa preferência, inclusive quando ela muda durante o uso. As animações de cartões, IA, mascote e tutorial continuam adaptadas a essa configuração.
