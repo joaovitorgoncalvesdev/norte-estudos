@@ -95,7 +95,7 @@ Use **Prazos**, o painel de Hoje ou o Planejamento para cadastrar uma prova, tra
 
 ## NORBIT ao seu lado
 
-O mascote acompanha boas-vindas, espera da IA, acerto, incentivo após erro, foco e pausa. As animações respeitam movimento reduzido do aparelho. O tutorial ao vivo agora tem **138 passos em 16 áreas**, incluindo prazos, NORBIT AI, quantidade e dificuldade das questões, respostas comentadas, contexto, consentimento, alarmes, minipainel e janela flutuante. As respostas da IA no tutorial são exemplos locais, sem consumo de cota; as alterações da prática são descartadas ao sair.
+O mascote acompanha boas-vindas, espera da IA, acerto, incentivo após erro, foco e pausa. As animações respeitam movimento reduzido do aparelho. O tutorial ao vivo agora tem **144 passos em 16 áreas**, incluindo prazos, NORBIT AI, quantidade e dificuldade das questões, respostas comentadas, contexto, consentimento, alarmes, minipainel e janela flutuante. As respostas da IA no tutorial são exemplos locais, sem consumo de cota; as alterações da prática são descartadas ao sair.
 
 O novo mascote minimalista tem corpo branco arredondado, olhos simples e pequenas mãos. Ele acena e pisca suavemente; em movimento reduzido permanece estático. [Vídeo de apresentação, 6 segundos](../assets/norbit.mp4).
 
@@ -129,7 +129,7 @@ Em **Prazos**, **Exportar para calendário** baixa um arquivo ICS com todos os p
 
 Em **Evolução**, **Seu ritmo, em perspectiva** compara os últimos 7 dias, incluindo hoje, aos 7 dias anteriores: minutos, questões e acerto. Este balanço sempre usa esses períodos, mesmo quando o gráfico está em outro filtro. O acerto só é comparado quando ambos os períodos têm questões registradas. Quantidade e dificuldade diferentes podem afetar os resultados.
 
-O **tema escuro** usa camadas distintas para menu, painéis e campos. Alterne pelo menu ou nas preferências. A lupa anima ao passar o cursor ou receber foco, sem animação contínua. Todos esses recursos estão no tutorial ao vivo: Hoje, Questões e erros, Prazos, Evolução e Ajustes, agora com **138 passos em 16 áreas**.
+O **tema escuro** usa camadas distintas para menu, painéis e campos. Alterne pelo menu ou nas preferências. A lupa anima ao passar o cursor ou receber foco, sem animação contínua. Todos esses recursos estão no tutorial ao vivo: Hoje, Questões e erros, Prazos, Evolução e Ajustes, agora com **144 passos em 16 áreas**.
 
 
 ## Novas ferramentas de estudo
@@ -145,3 +145,17 @@ As revisões passam a considerar sua avaliação de lembrança e o desempenho re
 A NORBIT oferece ferramentas abaixo da conversa. Escolha uma, ajuste o texto e selecione notas da biblioteca como referência, se desejar. Pistas são reveladas uma por vez e missões têm passos marcáveis, sem novos pedidos. Respostas reutilizáveis ficam neste aparelho. Questões geradas podem ir para o banco e seu resultado pode entrar no histórico após responder. Confira os gabaritos no material.
 
 O aviso de backup aparece quando não há exportação registrada ou depois de sete dias. Exporte em Ajustes para proteger os dados e transferi-los manualmente entre aparelhos.
+
+## Uma chegada mais simples
+
+Ao abrir sem uma preparação, explore **Organize**, **Pratique** e **Acompanhe**. As prévias são exemplos e não geram registros. Use **Começar minha preparação** para criar seu espaço, **Explorar um exemplo** para conhecer o painel ou o tutorial ao vivo para praticar. As abas também funcionam com as setas do teclado. As animações são breves e respeitam movimento reduzido.
+
+## Encontre e retome suas questões
+
+A busca do banco encontra enunciados, assuntos e origens, mesmo sem acentos. Escolha uma matéria para habilitar o filtro de assunto. Combine dificuldade, origem, favoritas e questões ainda não praticadas. O filtro de erros considera a última resposta dos treinos salvos: uma questão acertada no treino mais recente deixa essa fila. A taxa de acerto usa todos os treinos salvos.
+
+Marque a estrela para guardar uma favorita; essa escolha entra no backup. Organize por ordem de adição, enunciado ou menor taxa de acerto. A coleção mostra 12 questões por página; montar um treino usa todas as questões dos filtros, não apenas a página visível.
+
+Em **Praticar**, tente responder antes de ver o gabarito. A correção permite tentar novamente e criar um cartão. A prática rápida é uma consulta e não salva desempenho: use **Montar treino** para salvar o resultado.
+
+Na importação, abra um arquivo CSV/JSON de até 300 KB ou cole o conteúdo. Escolha a matéria e o assunto do lote e confira a prévia. Enunciados repetidos são identificados no cadastro e na importação. **Exportar filtro em CSV** baixa a seleção completa, com gabaritos, explicações, matérias e assuntos. Ao reimportar, a matéria e o assunto escolhidos no formulário são aplicados ao lote; as colunas informativas não recriam disciplinas automaticamente. Para transportar todos os dados, use o backup completo em Ajustes.

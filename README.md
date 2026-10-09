@@ -8,6 +8,10 @@ Um painel pessoal para organizar sua preparação, planejamento, foco, questões
 
 ## Funcionalidades
 
+- Boas-vindas com apresentação interativa de organização, prática e progresso, animações leves e navegação por teclado.
+- Banco com busca sem acentos, filtro por assunto, favoritos, questões ainda não praticadas, ordenação e paginação.
+- Prática rápida com correção e criação de cartão, importação de arquivos CSV/JSON e exportação dos filtros.
+
 - Página de cada assunto com notas, materiais, erros, cartões, histórico e acesso à NORBIT.
 - Banco pessoal de questões com filtros, importação CSV/JSON e treino dos erros.
 - Simulados interativos com relógio, marcação de dúvidas, retomada e correção explicada.
@@ -20,7 +24,7 @@ Um painel pessoal para organizar sua preparação, planejamento, foco, questões
 - Começo rápido por tempo disponível, busca sem acentos em sete categorias, revisão a partir de erros, exportação de prazos para calendário e balanço dos últimos 7 dias.
 - Tema escuro com superfícies e contrastes revisados; lupa animada com suporte a movimento reduzido.
 - Movimento consistente em painéis, gráficos, formulários, avisos e controles, com animações nativas leves e respeito ao movimento reduzido do aparelho.
-- Tutorial ao vivo com 138 passos em 16 áreas, com controles destacados, cliques guiados e progresso salvo.
+- Tutorial ao vivo com 144 passos em 16 áreas, com controles destacados, cliques guiados e progresso salvo.
 - Favicon com a marca Norte, incluído no HTML para uso offline.
 - Visão do dia com metas, tarefas e revisões.
 - Planejamento conforme disponibilidade, prioridades e desempenho.
