@@ -98,3 +98,7 @@ Use **Prazos**, o painel de Hoje ou o Planejamento para cadastrar uma prova, tra
 O mascote acompanha boas-vindas, espera da IA, acerto, incentivo após erro, foco e pausa. As animações respeitam movimento reduzido do aparelho. O tutorial ao vivo agora tem **91 passos em 14 áreas**, incluindo prazos, NORBIT AI, quantidade e dificuldade das questões, respostas comentadas, contexto, consentimento, alarmes, minipainel e janela flutuante. As respostas da IA no tutorial são exemplos locais, sem consumo de cota; as alterações da prática são descartadas ao sair.
 
 O novo mascote minimalista tem corpo branco arredondado, olhos simples e pequenas mãos. Ele acena e pisca suavemente; em movimento reduzido permanece estático. [Vídeo de apresentação, 6 segundos](../assets/norbit.mp4).
+
+
+### Vídeos do NORBIT
+O mascote tem seis vídeos silenciosos: boas-vindas, pensando, acerto, incentivo, foco e pausa. São WebM transparentes de 256 pixels, com 20 quadros por segundo, somando 227.543 bytes. Cada estado é carregado apenas quando aparece e compartilhado entre as telas. A reprodução pausa fora da tela ou com a aba oculta; somente a espera da IA se repete. Com economia de dados, menos movimento ou uso offline, o mascote usa a imagem leve. Falhas de reprodução não interrompem os estudos.

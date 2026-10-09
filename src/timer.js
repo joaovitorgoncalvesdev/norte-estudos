@@ -12,7 +12,7 @@ function updateTimer(){const t=db.timer,dock=$('#timer-dock');if(!dock)return;if
  if(timerPip?.closed)timerPip=null;dock.hidden=t.dockVisible===false||(route==='foco'&&!t.dockOnFocus)||!!timerPip;const key=[t.examId,t.startedAt,t.running,t.notified,t.mode,db.theme,timerAlert].join('|');
  if(dock.hidden){dock.innerHTML='';timerDockKey=''}
  if(!dock.hidden&&key!==timerDockKey){dock.innerHTML=timerSurface(t);timerDockKey=key}
- if(timerPip&&key!==timerPipKey){timerPip.document.documentElement.dataset.theme=db.theme;timerPip.document.body.innerHTML=timerSurface(t,true);timerPipKey=key}
+ if(timerPip&&key!==timerPipKey){timerPip.document.documentElement.dataset.theme=db.theme;timerPip.document.body.innerHTML=timerSurface(t,true);timerPipKey=key;syncMascotMedia(timerPip.document)}
  for(const doc of [document,...(timerPip?[timerPip.document]:[])]){doc.querySelectorAll('[data-timer-count]').forEach(el=>el.textContent=clockLabel(seconds));doc.querySelectorAll('[data-timer-status]').forEach(el=>el.textContent=status);doc.querySelectorAll('[data-timer-progress]').forEach(el=>el.style.width=(t.mode==='free'?0:Math.min(100,elapsed/t.duration*100))+'%')}
 }
 async function openTimerPip(){if(tour)return toast('A janela externa fica desativada durante o tutorial.');if(!db.timer)return toast('Comece uma sessão primeiro.');timerUnlockAudio();if(timerPip&&!timerPip.closed){timerPip.focus();return}if(!window.documentPictureInPicture?.requestWindow){db.timer.dockVisible=true;db.timer.dockOnFocus=true;commit();return toast('Este navegador não oferece uma janela sempre visível. Use o minipainel no Norte.')}

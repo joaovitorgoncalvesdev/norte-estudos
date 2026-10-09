@@ -179,7 +179,7 @@ function render(){
   $('#breadcrumb').textContent='Seu espaço / '+(studyLabel(route)||'Hoje');
   const views={hoje:viewPersonalToday,plano:viewPersonalPlan,edital:viewSyllabus,foco:viewFocus,questoes:viewQuestions,simulados:viewMocks,revisoes:viewReviews,cartoes:viewCards,evolucao:viewAnalytics,biblioteca:viewLibrary,historico:viewHistory,ajustes:viewSettings,guia:viewTourHub,ia:viewAI,prazos:viewDeadlines};
   $('#content').innerHTML=(storageProblem?`<div class="note warn" style="margin-bottom:20px">${esc(storageProblem)} ${btn('Exportar backup','export','','secondary small')}${recoveryRaw?btn('Baixar dados para recuperação','recovery-export','','secondary small'):''}</div>`:'')+(exam()&&route==='hoje'?guideInvitation():'')+(!exam()&&!['ajustes','guia','ia'].includes(route)?viewWelcome():views[route]());
-  syncFocusUI();updateTimer();
+  syncFocusUI();updateTimer();syncMascotMedia();
   $('.local-state').innerHTML=tour?'<span class="state-dot"></span>Prática temporária':'<span class="state-dot"></span>Salvo neste aparelho';
   if(tour)tourSchedule();
 }

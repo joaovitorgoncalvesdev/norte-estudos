@@ -81,6 +81,8 @@
 @media(prefers-reduced-motion:reduce){.norbit-mascot *{animation:none!important;transition:none!important}.mascot-lid{opacity:0!important}}
 
 .mascot-lid{top:44.9%;width:9.8%;height:12.4%}.mascot-lid-left{left:32.5%}.mascot-lid-right{left:56.9%}
+
+.mascot-video{position:absolute;inset:0;width:100%;height:100%;object-fit:contain;pointer-events:none;opacity:0}.norbit-mascot.is-video-ready .mascot-video{opacity:1}.norbit-mascot.is-video-ready>.mascot-figure,.norbit-mascot.is-video-ready>.mascot-spark{visibility:hidden}.norbit-mascot.is-video-ready .mascot-figure,.norbit-mascot.is-video-ready .mascot-hand,.norbit-mascot.is-video-ready .mascot-lid,.norbit-mascot.is-video-ready .mascot-spark{animation-play-state:paused}.norbit-mascot.is-motion-static *{animation:none!important;transition:none!important}.norbit-mascot.is-motion-static .mascot-lid,.norbit-mascot.is-motion-static .mascot-spark{opacity:0!important}
 </style>
 </head>
 <body>
@@ -284,7 +286,7 @@ function render(){
   $('#breadcrumb').textContent='Seu espaço / '+(studyLabel(route)||'Hoje');
   const views={hoje:viewPersonalToday,plano:viewPersonalPlan,edital:viewSyllabus,foco:viewFocus,questoes:viewQuestions,simulados:viewMocks,revisoes:viewReviews,cartoes:viewCards,evolucao:viewAnalytics,biblioteca:viewLibrary,historico:viewHistory,ajustes:viewSettings,guia:viewTourHub,ia:viewAI,prazos:viewDeadlines};
   $('#content').innerHTML=(storageProblem?`<div class="note warn" style="margin-bottom:20px">${esc(storageProblem)} ${btn('Exportar backup','export','','secondary small')}${recoveryRaw?btn('Baixar dados para recuperação','recovery-export','','secondary small'):''}</div>`:'')+(exam()&&route==='hoje'?guideInvitation():'')+(!exam()&&!['ajustes','guia','ia'].includes(route)?viewWelcome():views[route]());
-  syncFocusUI();updateTimer();
+  syncFocusUI();updateTimer();syncMascotMedia();
   $('.local-state').innerHTML=tour?'<span class="state-dot"></span>Prática temporária':'<span class="state-dot"></span>Salvo neste aparelho';
   if(tour)tourSchedule();
 }
@@ -583,7 +585,7 @@ function updateTimer(){const t=db.timer,dock=$('#timer-dock');if(!dock)return;if
  if(timerPip?.closed)timerPip=null;dock.hidden=t.dockVisible===false||(route==='foco'&&!t.dockOnFocus)||!!timerPip;const key=[t.examId,t.startedAt,t.running,t.notified,t.mode,db.theme,timerAlert].join('|');
  if(dock.hidden){dock.innerHTML='';timerDockKey=''}
  if(!dock.hidden&&key!==timerDockKey){dock.innerHTML=timerSurface(t);timerDockKey=key}
- if(timerPip&&key!==timerPipKey){timerPip.document.documentElement.dataset.theme=db.theme;timerPip.document.body.innerHTML=timerSurface(t,true);timerPipKey=key}
+ if(timerPip&&key!==timerPipKey){timerPip.document.documentElement.dataset.theme=db.theme;timerPip.document.body.innerHTML=timerSurface(t,true);timerPipKey=key;syncMascotMedia(timerPip.document)}
  for(const doc of [document,...(timerPip?[timerPip.document]:[])]){doc.querySelectorAll('[data-timer-count]').forEach(el=>el.textContent=clockLabel(seconds));doc.querySelectorAll('[data-timer-status]').forEach(el=>el.textContent=status);doc.querySelectorAll('[data-timer-progress]').forEach(el=>el.style.width=(t.mode==='free'?0:Math.min(100,elapsed/t.duration*100))+'%')}
 }
 async function openTimerPip(){if(tour)return toast('A janela externa fica desativada durante o tutorial.');if(!db.timer)return toast('Comece uma sessão primeiro.');timerUnlockAudio();if(timerPip&&!timerPip.closed){timerPip.focus();return}if(!window.documentPictureInPicture?.requestWindow){db.timer.dockVisible=true;db.timer.dockOnFocus=true;commit();return toast('Este navegador não oferece uma janela sempre visível. Use o minipainel no Norte.')}
@@ -655,6 +657,46 @@ tourAreas.ia={label:'NORBIT AI',caption:'Explicar, memorizar e praticar',steps:[
  tStep('#ai-save-form','Cartões que você pode revisar.','Edite perguntas e respostas, escolha os cartões e a disciplina. Só serão guardados quando você clicar em Adicionar selecionados.',{prepare:()=>studyAIPractice('cards')}),
  tStep('.norbit-details','Seus dados e sua cota.','Consulte aqui os limites e a privacidade. Cancelar interrompe o pedido; um pedido já enviado ao serviço pode ter consumido cota.')
 ]};
+
+// Six shared, silent clips. No video is embedded in the HTML or required offline.
+const mascotClips=new Map(),mascotDocuments=new WeakMap();
+const mascotStates=new Set(['welcome','thinking','success','encourage','focus','pause']);
+const mascotMediaBase=new URL('assets/',location.href);
+function syncMascotMedia(doc=document){
+ if(mascotDocuments.has(doc)||!doc.defaultView||location.protocol==='file:')return;
+ const win=doc.defaultView,reduce=win.matchMedia('(prefers-reduced-motion: reduce)'),nodes=new Map();
+ const allowed=()=>!reduce.matches&&!navigator.connection?.saveData;
+ const supported=doc.createElement('video').canPlayType('video/webm; codecs="vp9"');
+ if(!supported||!win.IntersectionObserver)return;
+ function fallback(root,record){record.failed=true;record.video?.remove();record.video=null;root.classList.remove('is-video-ready')}
+ async function play(root,record){
+  if(!allowed()||doc.hidden||!record.visible||record.failed||!root.isConnected)return;
+  if(record.video){if(!record.video.ended)record.video.play().catch(()=>fallback(root,record));return}
+  if(record.loading)return;record.loading=true;
+  const state=root.dataset.state;
+  try{
+   if(!mascotClips.has(state))mascotClips.set(state,fetch(new URL('norbit-'+state+'.webm',mascotMediaBase),{cache:'force-cache',credentials:'omit'}).then(async r=>{if(!r.ok)throw Error('Clip unavailable');const blob=await r.blob();if(blob.size>250000||!blob.type.startsWith('video/'))throw Error('Invalid clip');return URL.createObjectURL(blob)}));
+   const url=await mascotClips.get(state);
+   if(!root.isConnected||!allowed()||!record.visible||doc.hidden)return;
+   const video=doc.createElement('video');record.video=video;
+   video.className='mascot-video';video.muted=true;video.defaultMuted=true;video.playsInline=true;video.preload='none';video.loop=state==='thinking';video.setAttribute('aria-hidden','true');video.tabIndex=-1;video.disablePictureInPicture=true;video.disableRemotePlayback=true;
+   video.addEventListener('playing',()=>root.classList.add('is-video-ready'));
+   video.addEventListener('error',()=>fallback(root,record),{once:true});
+   video.src=url;root.append(video);await video.play();
+  }catch{fallback(root,record)}finally{record.loading=false}
+ }
+ const observer=new win.IntersectionObserver(entries=>{for(const entry of entries){const record=nodes.get(entry.target);if(!record)continue;record.visible=entry.isIntersecting&&entry.intersectionRatio>0;if(record.visible)play(entry.target,record);else record.video?.pause()}},{threshold:0.01});
+ function scan(node){if(node.nodeType!==1)return;const roots=[...(node.matches('.norbit-mascot')?[node]:[]),...node.querySelectorAll('.norbit-mascot')];for(const root of roots)if(!nodes.has(root)&&mascotStates.has(root.dataset.state)){nodes.set(root,{visible:false,loading:false,failed:false,video:null});observer.observe(root)}}
+ function cleanup(){for(const [root,record] of nodes)if(!root.isConnected){observer.unobserve(root);record.video?.pause();record.video?.removeAttribute('src');record.video?.load();nodes.delete(root)}}
+ function preference(){for(const [root,record] of nodes){if(!allowed()){record.video?.pause();root.classList.remove('is-video-ready');root.classList.add('is-motion-static')}else{root.classList.remove('is-motion-static');play(root,record)}}}
+ const mutations=new win.MutationObserver(entries=>{cleanup();for(const entry of entries)for(const node of entry.addedNodes)scan(node);preference()});
+ mutations.observe(doc.body,{childList:true,subtree:true});scan(doc.body);preference();
+ doc.addEventListener('visibilitychange',()=>{for(const [root,record] of nodes)doc.hidden?record.video?.pause():play(root,record)});
+ reduce.addEventListener('change',preference);navigator.connection?.addEventListener('change',preference);
+ win.addEventListener('pagehide',()=>{observer.disconnect();mutations.disconnect();for(const record of nodes.values())record.video?.pause();nodes.clear();reduce.removeEventListener('change',preference);navigator.connection?.removeEventListener('change',preference);mascotDocuments.delete(doc)},{once:true});
+ mascotDocuments.set(doc,true);
+}
+window.addEventListener('pageshow',()=>syncMascotMedia());
 
 go(location.hash.slice(1)||'hoje');
 </script>
