@@ -77,7 +77,3 @@ O Norte oferece explicações, cartões editáveis e questões de treino com NOR
 Um companheiro minimalista com movimentos suaves de boas-vindas, espera, acerto, incentivo, foco e pausa. As animações respeitam movimento reduzido. [Assistir ao vídeo do mascote](assets/norbit.mp4).
 
 A criação guiada de perfis foi retirada. Novas preparações usam o formulário simples; os estudos existentes continuam preservados.
-
-
-### Vídeos do NORBIT
-O mascote tem seis vídeos silenciosos: boas-vindas, pensando, acerto, incentivo, foco e pausa. São WebM transparentes de 256 pixels, com 20 quadros por segundo, somando 227.543 bytes. Cada estado é carregado apenas quando aparece e compartilhado entre as telas. A reprodução pausa fora da tela ou com a aba oculta; somente a espera da IA se repete. Com economia de dados, menos movimento ou uso offline, o mascote usa a imagem leve. Falhas de reprodução não interrompem os estudos.

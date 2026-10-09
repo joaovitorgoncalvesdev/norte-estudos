@@ -10,5 +10,3 @@
 @media(prefers-reduced-motion:reduce){.norbit-mascot *{animation:none!important;transition:none!important}.mascot-lid{opacity:0!important}}
 
 .mascot-lid{top:44.9%;width:9.8%;height:12.4%}.mascot-lid-left{left:32.5%}.mascot-lid-right{left:56.9%}
-
-.mascot-video{position:absolute;inset:0;width:100%;height:100%;object-fit:contain;pointer-events:none;opacity:0}.norbit-mascot.is-video-ready .mascot-video{opacity:1}.norbit-mascot.is-video-ready>.mascot-figure,.norbit-mascot.is-video-ready>.mascot-spark{visibility:hidden}.norbit-mascot.is-video-ready .mascot-figure,.norbit-mascot.is-video-ready .mascot-hand,.norbit-mascot.is-video-ready .mascot-lid,.norbit-mascot.is-video-ready .mascot-spark{animation-play-state:paused}.norbit-mascot.is-motion-static *{animation:none!important;transition:none!important}.norbit-mascot.is-motion-static .mascot-lid,.norbit-mascot.is-motion-static .mascot-spark{opacity:0!important}
