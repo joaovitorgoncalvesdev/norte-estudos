@@ -1,9 +1,9 @@
 import { readFile, writeFile } from 'node:fs/promises';
 
 const root = new URL('../', import.meta.url);
-const modules = ['study-tools','practice','tutor-tools','studio-tour','arrival-bank'];
+const modules = ['study-tools','practice','tutor-tools','studio-tour','arrival-bank','learning','advanced-bank','import-mapping','norbit-context','refreshed-tour'];
 const extraJS = (await Promise.all(modules.map(name=>readFile(new URL('src/'+name+'.js',root),'utf8')))).join('\n');
-const extraCSS = await readFile(new URL('src/studio.css',root),'utf8')+'\n'+await readFile(new URL('src/arrival-bank.css',root),'utf8');
+const extraCSS = (await Promise.all(['studio','arrival-bank','connected'].map(name=>readFile(new URL('src/'+name+'.css',root),'utf8')))).join('\n');
 const [template, css, js, favicon, aiJS, aiCSS, timerJS, timerCSS, profileJS, profileCSS, mascot, chatJS, motionJS, chatCSS, siteMotionJS, siteMotionCSS, enhancementsJS, enhancementsCSS] = await Promise.all([
   readFile(new URL('src/index.template.html', root), 'utf8'),
   readFile(new URL('src/styles.css', root), 'utf8'),

@@ -72,3 +72,12 @@ Uma referência opcional envia até 8.000 caracteres das notas do material selec
 Respostas são guardadas por preparação, até 20 itens, e podem ser reabertas sem chamadas. Pedidos iguais, com o mesmo contexto, histórico e referência, podem reutilizar o resultado local. Revelar pistas e marcar passos não usa a API.
 
 Além das cotas de pedidos, há reserva diária de unidades estimadas de texto, padrão de 150.000, configurável em AI_DAILY_TOKEN_BUDGET. A reserva inclui entrada, contexto, histórico, referência e teto de saída. É uma proteção adicional da aplicação, não a contagem real de tokens do Google nem garantia de custo. A explicação tem teto de 2.600 tokens de saída; as questões usam teto proporcional à quantidade. Não há repetição automática de resposta inválida.
+
+
+## Contexto, explicações e conferência
+
+Matéria, assunto, ferramenta, fonte e estilo são guardados em cada chat. O resumo da preparação é opcional. A escolha da fonte envia apenas as notas selecionadas. Feedback discursivo compara a resposta aos critérios fornecidos e não emite nota oficial.
+
+Questões geradas com fonte precisam trazer um trecho exato de apoio por pergunta. O servidor rejeita apoio ausente ou inexistente no texto. Isso verifica a citação, não prova que o gabarito ou a interpretação estejam corretos. Sinalize dúvidas e confira seu material.
+
+Os testes em worker/quality.test.mjs usam respostas simuladas para validar contratos, estilos e evidência. worker/quality-cases.json oferece seis casos para avaliação humana do modelo: recuperação, cálculo, referência insuficiente, rubrica, instrução maliciosa e questão com ressalva. Para avaliar uma troca de modelo, execute cada caso explicitamente, compare com expected/reject e registre os resultados. Esses casos não são enviados automaticamente e não consomem cota por navegação. Uma avaliação automática de formato não garante ausência de erros factuais.

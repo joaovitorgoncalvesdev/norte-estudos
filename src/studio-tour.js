@@ -51,4 +51,4 @@ tourAreas.ia.steps.push(
  tStep('#tutor-saved','Reutilize sem consumir pedidos.','Resultados novos são guardados nesta preparação. Reabrir não usa a API. Um pedido idêntico, com as mesmas fontes e contexto, também pode ser reutilizado.',{prepare:()=>{aiResult=null;render()}}),
  tStep('[data-action="ai-bank-save"]','Guarde e registre os treinos da IA.','Salvar questões no banco pede o assunto. Depois de responder tudo, Registrar resultado pede o tempo e adiciona o treino uma única vez.',{prepare:()=>{studyAIPractice('quiz');render()},observeOnly:true})
 );
-try{validateBackup(db)}catch(e){storageProblem=e.message+' Exporte seus dados antes de fazer alterações.'}
+

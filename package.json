@@ -1,12 +1,12 @@
 {
   "name": "norte-estudos",
-  "version": "3.1.0",
+  "version": "4.0.0",
   "private": true,
   "type": "module",
   "description": "Plataforma pessoal de estudos para faculdade, concursos e novas habilidades, com funcionamento offline.",
   "scripts": {
     "build": "node scripts/build.mjs",
-    "check": "node --check src/app.js && node --check src/ai.js && node --check worker/index.js && node --check src/timer.js && node --check src/profile.js && node --check src/chats.js && node --check src/card-motion.js && node --check src/motion.js && node --check src/enhancements.js && node --check src/study-tools.js && node --check src/practice.js && node --check src/tutor-tools.js && node --check src/studio-tour.js && node --check src/arrival-bank.js",
-    "test:worker": "node worker/worker.test.mjs && node worker/chat.test.mjs && node worker/tutor.test.mjs"
+    "check": "node --check src/app.js && node --check src/ai.js && node --check worker/index.js && node --check src/timer.js && node --check src/profile.js && node --check src/chats.js && node --check src/card-motion.js && node --check src/motion.js && node --check src/enhancements.js && node --check src/study-tools.js && node --check src/practice.js && node --check src/tutor-tools.js && node --check src/studio-tour.js && node --check src/arrival-bank.js && node --check src/learning.js && node --check src/advanced-bank.js && node --check src/import-mapping.js && node --check src/norbit-context.js && node --check src/refreshed-tour.js",
+    "test:worker": "node worker/worker.test.mjs && node worker/chat.test.mjs && node worker/tutor.test.mjs && node worker/quality.test.mjs"
   }
 }

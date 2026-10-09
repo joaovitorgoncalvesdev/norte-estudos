@@ -41,9 +41,9 @@ aiSubmit=async function(form){
  if(aiBusy||tour)return aiSubmitBeforeTutor(form);
  const content=form.elements.content.value.trim();if(content.length<(aiCurrentChat()?.messages.length?1:20)||content.length>8000)return aiSubmitBeforeTutor(form);
  const sourceText=tutorSourceText(),history=aiCurrentChat()?aiChatHistoryPayload(aiCurrentChat()):[],context=aiUseContext?aiStudyContext():'';
- tutorPreparing=true;let key;try{key=await tutorKey({mode:aiMode,tool:aiMode==='explain'?tutorTool:'explain',content,sourceText,context,history,count:aiQuestionCount,difficulty:aiDifficulty})}finally{tutorPreparing=false}
+ tutorPreparing=true;let key;try{key=await tutorKey({mode:aiMode,tool:aiMode==='explain'?tutorTool:'explain',content,sourceText,context,history,responseStyle:norbitDepth,count:aiQuestionCount,difficulty:aiDifficulty})}finally{tutorPreparing=false}
  if(!form.isConnected||aiBusy)return;
- const cached=key&&studio().cache.find(row=>row.key===key);
+ const cached=key&&studio().cache.find(row=>row.key===key&&!row.result.needsReview);
  if(cached){const turn=aiChatBegin(content,aiMode);aiResult=clone(cached.result);aiExamId=exam()?.id||null;aiSubmittedContent=content;aiContent='';aiError='';aiGeneratedDifficulty=aiDifficulty;aiQuizIndex=0;tutorCacheHit=true;tutorHintsShown=0;tutorMissionDone=[];aiChatFinish(turn,aiResult,'');aiCleanupWidget();render();return}
  tutorCacheHit=false;tutorHintsShown=0;tutorMissionDone=[];
  await aiSubmitBeforeTutor(form);

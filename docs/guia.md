@@ -95,7 +95,7 @@ Use **Prazos**, o painel de Hoje ou o Planejamento para cadastrar uma prova, tra
 
 ## NORBIT ao seu lado
 
-O mascote acompanha boas-vindas, espera da IA, acerto, incentivo após erro, foco e pausa. As animações respeitam movimento reduzido do aparelho. O tutorial ao vivo agora tem **144 passos em 16 áreas**, incluindo prazos, NORBIT AI, quantidade e dificuldade das questões, respostas comentadas, contexto, consentimento, alarmes, minipainel e janela flutuante. As respostas da IA no tutorial são exemplos locais, sem consumo de cota; as alterações da prática são descartadas ao sair.
+O mascote acompanha boas-vindas, espera da IA, acerto, incentivo após erro, foco e pausa. As animações respeitam movimento reduzido do aparelho. O tutorial ao vivo agora tem **133 passos em 18 áreas**, incluindo prazos, NORBIT AI, quantidade e dificuldade das questões, respostas comentadas, contexto, consentimento, alarmes, minipainel e janela flutuante. As respostas da IA no tutorial são exemplos locais, sem consumo de cota; as alterações da prática são descartadas ao sair.
 
 O novo mascote minimalista tem corpo branco arredondado, olhos simples e pequenas mãos. Ele acena e pisca suavemente; em movimento reduzido permanece estático. [Vídeo de apresentação, 6 segundos](../assets/norbit.mp4).
 
@@ -129,7 +129,7 @@ Em **Prazos**, **Exportar para calendário** baixa um arquivo ICS com todos os p
 
 Em **Evolução**, **Seu ritmo, em perspectiva** compara os últimos 7 dias, incluindo hoje, aos 7 dias anteriores: minutos, questões e acerto. Este balanço sempre usa esses períodos, mesmo quando o gráfico está em outro filtro. O acerto só é comparado quando ambos os períodos têm questões registradas. Quantidade e dificuldade diferentes podem afetar os resultados.
 
-O **tema escuro** usa camadas distintas para menu, painéis e campos. Alterne pelo menu ou nas preferências. A lupa anima ao passar o cursor ou receber foco, sem animação contínua. Todos esses recursos estão no tutorial ao vivo: Hoje, Questões e erros, Prazos, Evolução e Ajustes, agora com **144 passos em 16 áreas**.
+O **tema escuro** usa camadas distintas para menu, painéis e campos. Alterne pelo menu ou nas preferências. A lupa anima ao passar o cursor ou receber foco, sem animação contínua. Todos esses recursos estão no tutorial ao vivo: Hoje, Questões e erros, Prazos, Evolução e Ajustes, agora com **133 passos em 18 áreas**.
 
 
 ## Novas ferramentas de estudo
@@ -159,3 +159,20 @@ Marque a estrela para guardar uma favorita; essa escolha entra no backup. Organi
 Em **Praticar**, tente responder antes de ver o gabarito. A correção permite tentar novamente e criar um cartão. A prática rápida é uma consulta e não salva desempenho: use **Montar treino** para salvar o resultado.
 
 Na importação, abra um arquivo CSV/JSON de até 300 KB ou cole o conteúdo. Escolha a matéria e o assunto do lote e confira a prévia. Enunciados repetidos são identificados no cadastro e na importação. **Exportar filtro em CSV** baixa a seleção completa, com gabaritos, explicações, matérias e assuntos. Ao reimportar, a matéria e o assunto escolhidos no formulário são aplicados ao lote; as colunas informativas não recriam disciplinas automaticamente. Para transportar todos os dados, use o backup completo em Ajustes.
+
+
+## Estudo conectado — versão 4
+
+**Primeiros passos** apresenta o essencial em cinco etapas. O tour completo e os tutoriais de cada área destacam os controles atuais, com dados temporários que são descartados ao sair. Não há chamadas à IA durante a demonstração.
+
+Em **Hoje → Começar sessão guiada**, escolha matéria, assunto e tempo disponível. Tente lembrar, responda até cinco perguntas do banco, confira e registre os minutos reais. A sessão é retomável. Criar cartão ou marcar revisão são escolhas separadas.
+
+**Praticar** reúne o banco, questões e erros e simulados. Crie cadernos, filtre revisões disponíveis, compare tentativas e indique confiança antes de responder. Há quatro formatos: alternativas, certo ou errado, resposta curta e discursiva. Resposta curta aceita as variações cadastradas; discursiva exige autoavaliação pelos critérios antes do registro, sem nota oficial. Marcações e tempo de consulta por pergunta ficam na correção. O relógio total continua ao sair; tempo por pergunta conta enquanto a tela está ativa. Confira o material antes de considerar um gabarito correto.
+
+Depois do treino, perguntas ficam agendadas para revisão conforme resultado e confiança. A prática rápida permite avaliar a lembrança para reagendar, sem adicionar acertos ao histórico. Exporte CSV com os formatos e respostas aceitas. Ao importar, escolha associação manual ou reconhecimento pelos nomes já cadastrados. Confira os vínculos na prévia antes de adicionar.
+
+As notas de assuntos e concentração são salvas automaticamente. Confira o indicador de salvamento. Ajustes oferece uma cópia local diária complementar, limitada a conjuntos de dados pequenos. Ela também desaparece se o navegador for limpo. Continue exportando backup manual.
+
+Na **NORBIT**, escolha a tarefa junto da mensagem, o assunto da conversa, a fonte e o estilo da explicação. Essas opções ficam no chat. Busque respostas guardadas antes de enviar um novo pedido. Você pode transformar uma explicação em cartão, revisão ou atividade somente depois de editar e confirmar a prévia. Horários ocupados são rejeitados.
+
+**Sinalizar um problema** guarda uma dúvida local e exclui aquela resposta da reutilização automática. Não envia denúncia a terceiros. Quando a IA está indisponível, continue com respostas guardadas, cartões e questões locais.

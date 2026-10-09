@@ -24,7 +24,7 @@ Um painel pessoal para organizar sua preparação, planejamento, foco, questões
 - Começo rápido por tempo disponível, busca sem acentos em sete categorias, revisão a partir de erros, exportação de prazos para calendário e balanço dos últimos 7 dias.
 - Tema escuro com superfícies e contrastes revisados; lupa animada com suporte a movimento reduzido.
 - Movimento consistente em painéis, gráficos, formulários, avisos e controles, com animações nativas leves e respeito ao movimento reduzido do aparelho.
-- Tutorial ao vivo com 144 passos em 16 áreas, com controles destacados, cliques guiados e progresso salvo.
+- Tutorial ao vivo com 133 passos em 18 áreas, com controles destacados, cliques guiados e progresso salvo.
 - Favicon com a marca Norte, incluído no HTML para uso offline.
 - Visão do dia com metas, tarefas e revisões.
 - Planejamento conforme disponibilidade, prioridades e desempenho.
@@ -108,3 +108,10 @@ Nos flashcards, clique ou use espaço para virar. O movimento pode ser invertido
 ## Menu por atividade
 O menu tem ícones e quatro grupos: Organizar (Hoje, Planejamento, Meu edital e Prazos), Estudar (Foco, NORBIT AI, Questões, Simulados, Revisões e Cartões), Acompanhar (Evolução e Histórico) e Recursos (Biblioteca, Tutorial e Ajustes). O destaque mostra a tela atual. Os contadores de revisões e cartões indicam filas separadas. No celular, abra Menu; escolha uma área ou use Escape para fechar. A lista rola sem esconder sua preparação e os controles de aparência.
 
+
+
+## Versão 4 — estudo conectado
+
+Sessão guiada retomável, cadernos, quatro formatos de questão, confiança, tempo por pergunta, marcações preservadas, revisão espaçada e comparação de tentativas. Notas com salvamento automático, reconhecimento de matérias na importação e recuperação local complementar ao backup manual.
+
+NORBIT com configurações por chat, estilos de explicação, feedback discursivo por critérios, busca em respostas guardadas, prévias editáveis para próximos passos e sinalização de conteúdo duvidoso. O tutorial usa os mesmos componentes do aplicativo: introdução de cinco passos e 133 etapas em 18 áreas. Animações nativas leves, temas e acessibilidade seguem a mesma interface.
