@@ -61,4 +61,14 @@ Responda normalmente às perguntas do tutor: o histórico recente é enviado com
 
 Não há caixa de autorização: clicar em Enviar autoriza o envio da mensagem e do histórico recente daquele chat. O resumo da preparação continua opcional. A verificação humana só aparece quando você pede uma resposta, e o envio segue automaticamente depois que ela termina. Você pode cancelar enquanto verifica. As cotas existentes continuam valendo.
 
-Nos flashcards, clique ou use espaço para virar. O movimento pode ser invertido antes de terminar, e a próxima pergunta entra suavemente. Com movimento reduzido, a troca é estática. A avaliação e os intervalos de revisão continuam iguais.
+Nos flashcards, clique ou use espaço para virar. O movimento pode ser invertido antes de terminar, e a próxima pergunta entra suavemente. Com movimento reduzido, a troca é estática. Os intervalos agora consideram a avaliação, o histórico de lembrança e o desempenho recente.
+
+## Ferramentas e qualidade das respostas
+
+A NORBIT organiza explicações em ideia principal, raciocínio, exemplo, confusões frequentes e pergunta de recuperação. As ferramentas incluem diagnóstico por lote, avaliação da própria explicação, três pistas graduais, missão de estudo, organização de notas, comparação, revisão de cartões e orientação semanal. Elas sugerem ações; não alteram automaticamente o planejamento.
+
+Uma referência opcional envia até 8.000 caracteres das notas do material selecionado. URLs externas não são lidas automaticamente. A API distingue explicação geral, resposta baseada na fonte e fonte insuficiente; verifica se a citação pertence ao texto recebido e recusa formatos incompletos. Essas verificações não garantem a correção de todo o conteúdo: confira interpretações, cálculos, gabaritos e fatos no material.
+
+Respostas são guardadas por preparação, até 20 itens, e podem ser reabertas sem chamadas. Pedidos iguais, com o mesmo contexto, histórico e referência, podem reutilizar o resultado local. Revelar pistas e marcar passos não usa a API.
+
+Além das cotas de pedidos, há reserva diária de unidades estimadas de texto, padrão de 150.000, configurável em AI_DAILY_TOKEN_BUDGET. A reserva inclui entrada, contexto, histórico, referência e teto de saída. É uma proteção adicional da aplicação, não a contagem real de tokens do Google nem garantia de custo. A explicação tem teto de 2.600 tokens de saída; as questões usam teto proporcional à quantidade. Não há repetição automática de resposta inválida.

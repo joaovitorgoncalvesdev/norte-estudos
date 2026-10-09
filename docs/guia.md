@@ -95,7 +95,7 @@ Use **Prazos**, o painel de Hoje ou o Planejamento para cadastrar uma prova, tra
 
 ## NORBIT ao seu lado
 
-O mascote acompanha boas-vindas, espera da IA, acerto, incentivo após erro, foco e pausa. As animações respeitam movimento reduzido do aparelho. O tutorial ao vivo agora tem **105 passos em 14 áreas**, incluindo prazos, NORBIT AI, quantidade e dificuldade das questões, respostas comentadas, contexto, consentimento, alarmes, minipainel e janela flutuante. As respostas da IA no tutorial são exemplos locais, sem consumo de cota; as alterações da prática são descartadas ao sair.
+O mascote acompanha boas-vindas, espera da IA, acerto, incentivo após erro, foco e pausa. As animações respeitam movimento reduzido do aparelho. O tutorial ao vivo agora tem **138 passos em 16 áreas**, incluindo prazos, NORBIT AI, quantidade e dificuldade das questões, respostas comentadas, contexto, consentimento, alarmes, minipainel e janela flutuante. As respostas da IA no tutorial são exemplos locais, sem consumo de cota; as alterações da prática são descartadas ao sair.
 
 O novo mascote minimalista tem corpo branco arredondado, olhos simples e pequenas mãos. Ele acena e pisca suavemente; em movimento reduzido permanece estático. [Vídeo de apresentação, 6 segundos](../assets/norbit.mp4).
 
@@ -129,5 +129,19 @@ Em **Prazos**, **Exportar para calendário** baixa um arquivo ICS com todos os p
 
 Em **Evolução**, **Seu ritmo, em perspectiva** compara os últimos 7 dias, incluindo hoje, aos 7 dias anteriores: minutos, questões e acerto. Este balanço sempre usa esses períodos, mesmo quando o gráfico está em outro filtro. O acerto só é comparado quando ambos os períodos têm questões registradas. Quantidade e dificuldade diferentes podem afetar os resultados.
 
-O **tema escuro** usa camadas distintas para menu, painéis e campos. Alterne pelo menu ou nas preferências. A lupa anima ao passar o cursor ou receber foco, sem animação contínua. Todos esses recursos estão no tutorial ao vivo: Hoje, Questões e erros, Prazos, Evolução e Ajustes, agora com **105 passos em 14 áreas**.
+O **tema escuro** usa camadas distintas para menu, painéis e campos. Alterne pelo menu ou nas preferências. A lupa anima ao passar o cursor ou receber foco, sem animação contínua. Todos esses recursos estão no tutorial ao vivo: Hoje, Questões e erros, Prazos, Evolução e Ajustes, agora com **138 passos em 16 áreas**.
 
+
+## Novas ferramentas de estudo
+
+Em **Meus assuntos**, abra um tema para reunir notas, materiais, erros, cartões e sessões. Salve a anotação antes de sair. Você pode criar um cartão ou levar uma dúvida à NORBIT.
+
+Em **Banco de questões**, cadastre perguntas com quatro alternativas e explicação, ou importe JSON/CSV usando o modelo exibido. Confira a prévia antes de aplicar. Os filtros também definem as questões do treino. Escolha quantidade e duração; marque dúvidas e navegue livremente. O relógio continua ao sair e o treino retoma neste navegador. Ao terminar, confira a correção e escolha **Registrar resultado**: revise os minutos reais antes de confirmar. O mesmo resultado não é registrado duas vezes.
+
+No painel, ajuste o tempo disponível para montar a **fila de estudo** e use **Personalizar painel** para reorganizar blocos. Em Planejamento, **Reorganizar atrasadas** apresenta uma prévia antes de aplicar; você pode desfazer. No Foco, **Modo concentração** abre notas e materiais. Ao registrar uma sessão, escreva o que retomar e escolha criar um cartão ou revisar amanhã.
+
+As revisões passam a considerar sua avaliação de lembrança e o desempenho recente. Esse intervalo é uma sugestão, não uma previsão exata de memória.
+
+A NORBIT oferece ferramentas abaixo da conversa. Escolha uma, ajuste o texto e selecione notas da biblioteca como referência, se desejar. Pistas são reveladas uma por vez e missões têm passos marcáveis, sem novos pedidos. Respostas reutilizáveis ficam neste aparelho. Questões geradas podem ir para o banco e seu resultado pode entrar no histórico após responder. Confira os gabaritos no material.
+
+O aviso de backup aparece quando não há exportação registrada ou depois de sete dias. Exporte em Ajustes para proteger os dados e transferi-los manualmente entre aparelhos.

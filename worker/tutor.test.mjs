@@ -1,0 +1,18 @@
+import assert from 'node:assert/strict';
+import worker,{StudyQuota} from './index.js';
+const origin='https://joaovitorgoncalvesdev.github.io';
+const input=(extra={})=>new Request('https://worker.example/ai',{method:'POST',headers:{Origin:origin,'Content-Type':'application/json','CF-Connecting-IP':'192.0.2.10'},body:JSON.stringify({mode:'explain',content:'Explique o conceito de recuperação ativa com passos e exemplos.',token:'test-token',...extra})});
+let result={explanation:'## Ideia principal\nTente lembrar antes de consultar.',basis:'source',quote:'Tente lembrar antes de consultar.',hints:[],steps:[]},calls=0;
+const env={GEMINI_API_KEY:'fake',TURNSTILE_SECRET:'fake',QUOTA:{idFromName:()=>0,get:()=>({fetch:async(url,options)=>{const reservation=JSON.parse(options.body);assert.ok(reservation.units>2600);assert.equal(reservation.budget,150000);return Response.json({allowed:true,remaining:29})}})}};
+globalThis.fetch=async(url,options)=>{if(String(url).includes('siteverify'))return Response.json({success:true,hostname:'joaovitorgoncalvesdev.github.io',action:'study'});calls++;const body=JSON.parse(options.body);assert.equal(body.generationConfig.maxOutputTokens,2600);assert.ok(body.systemInstruction.parts[0].text.includes('Não invente'));return Response.json({candidates:[{finishReason:'STOP',content:{parts:[{text:JSON.stringify(result)}]}}]})};
+let response=await worker.fetch(input({sourceText:'Tente lembrar antes de consultar.'}),env);assert.equal(response.status,200);
+result.quote='Citação que não existe.';response=await worker.fetch(input({sourceText:'Tente lembrar antes de consultar.'}),env);assert.equal(response.status,502);
+result={explanation:'Tente pensar.',basis:'general',quote:'',hints:['Uma','Duas'],steps:[]};response=await worker.fetch(input({tool:'hints'}),env);assert.equal(response.status,502);
+result.hints=['Uma','Duas','Três'];response=await worker.fetch(input({tool:'hints'}),env);assert.equal(response.status,200);
+result={explanation:'Vamos praticar.',basis:'general',quote:'',hints:[],steps:['Recupere','Pratique','Confira']};response=await worker.fetch(input({tool:'mission'}),env);assert.equal(response.status,200);
+response=await worker.fetch(input({tool:'invented'}),env);assert.equal(response.status,400);
+response=await worker.fetch(input({sourceText:'x'.repeat(8001)}),env);assert.equal(response.status,400);
+const map=new Map(),storage={get:async key=>map.get(key),put:async(key,value)=>map.set(key,value),transaction:async fn=>fn(storage)},quota=new StudyQuota({storage});
+const reserve=units=>quota.fetch(new Request('https://quota/reserve',{method:'POST',body:JSON.stringify({ipHash:'private-hash',units,budget:5000})}));
+assert.equal((await (await reserve(4000)).json()).allowed,true);assert.equal((await (await reserve(2000)).json()).allowed,false);
+assert.ok(calls>=5);console.log('PASS: exact-source quote verification, incomplete hints rejection, mission schema, invalid tool/source rejection, bounded provider output and persistent text budget');

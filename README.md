@@ -8,10 +8,19 @@ Um painel pessoal para organizar sua preparação, planejamento, foco, questões
 
 ## Funcionalidades
 
+- Página de cada assunto com notas, materiais, erros, cartões, histórico e acesso à NORBIT.
+- Banco pessoal de questões com filtros, importação CSV/JSON e treino dos erros.
+- Simulados interativos com relógio, marcação de dúvidas, retomada e correção explicada.
+- Fila unificada por tempo disponível, painel personalizável e reorganização das tarefas atrasadas.
+- Modo concentração, fechamento de sessão com próximo passo e revisão adaptada ao desempenho.
+- NORBIT com diagnóstico de erros, avaliação de explicações, pistas graduais, missões, organização de notas, comparação de conceitos, revisão de cartões e orientação semanal.
+- Referências escolhidas, respostas reutilizáveis e registro do treino da IA sem duplicar estatísticas.
+- Lembrete semanal de backup manual; dados e conversas continuam neste navegador.
+
 - Começo rápido por tempo disponível, busca sem acentos em sete categorias, revisão a partir de erros, exportação de prazos para calendário e balanço dos últimos 7 dias.
 - Tema escuro com superfícies e contrastes revisados; lupa animada com suporte a movimento reduzido.
 - Movimento consistente em painéis, gráficos, formulários, avisos e controles, com animações nativas leves e respeito ao movimento reduzido do aparelho.
-- Tutorial ao vivo com 105 passos em 14 áreas, com controles destacados, cliques guiados e progresso salvo.
+- Tutorial ao vivo com 138 passos em 16 áreas, com controles destacados, cliques guiados e progresso salvo.
 - Favicon com a marca Norte, incluído no HTML para uso offline.
 - Visão do dia com metas, tarefas e revisões.
 - Planejamento conforme disponibilidade, prioridades e desempenho.
