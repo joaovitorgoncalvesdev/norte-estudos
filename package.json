@@ -1,12 +1,13 @@
 {
   "name": "norte-estudos",
-  "version": "2.4.0",
+  "version": "2.5.0",
   "private": true,
   "type": "module",
   "description": "Plataforma pessoal de estudos para faculdade, concursos e novas habilidades, com funcionamento offline.",
   "scripts": {
     "build": "node scripts/build.mjs",
-    "check": "node --check src/app.js && node --check src/ai.js && node --check worker/index.js && node --check src/timer.js && node --check src/profile.js && node --check src/chats.js && node --check src/card-motion.js && node --check src/motion.js",
+    "check": "node --check src/app.js && node --check src/ai.js && node --check worker/index.js && node --check src/timer.js && node --check src/profile.js && node --check src/chats.js && node --check src/card-motion.js && node --check src/motion.js && node --check src/enhancements.js",
     "test:worker": "node worker/worker.test.mjs && node worker/chat.test.mjs"
   }
 }
+

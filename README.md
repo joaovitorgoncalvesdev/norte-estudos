@@ -8,8 +8,10 @@ Um painel pessoal para organizar sua preparação, planejamento, foco, questões
 
 ## Funcionalidades
 
+- Começo rápido por tempo disponível, busca sem acentos em sete categorias, revisão a partir de erros, exportação de prazos para calendário e balanço dos últimos 7 dias.
+- Tema escuro com superfícies e contrastes revisados; lupa animada com suporte a movimento reduzido.
 - Movimento consistente em painéis, gráficos, formulários, avisos e controles, com animações nativas leves e respeito ao movimento reduzido do aparelho.
-- Tutorial ao vivo com 95 passos em 14 áreas, com controles destacados, cliques guiados e progresso salvo.
+- Tutorial ao vivo com 105 passos em 14 áreas, com controles destacados, cliques guiados e progresso salvo.
 - Favicon com a marca Norte, incluído no HTML para uso offline.
 - Visão do dia com metas, tarefas e revisões.
 - Planejamento conforme disponibilidade, prioridades e desempenho.
@@ -92,3 +94,4 @@ Nos flashcards, clique ou use espaço para virar. O movimento pode ser invertido
 
 ## Menu por atividade
 O menu tem ícones e quatro grupos: Organizar (Hoje, Planejamento, Meu edital e Prazos), Estudar (Foco, NORBIT AI, Questões, Simulados, Revisões e Cartões), Acompanhar (Evolução e Histórico) e Recursos (Biblioteca, Tutorial e Ajustes). O destaque mostra a tela atual. Os contadores de revisões e cartões indicam filas separadas. No celular, abra Menu; escolha uma área ou use Escape para fechar. A lista rola sem esconder sua preparação e os controles de aparência.
+

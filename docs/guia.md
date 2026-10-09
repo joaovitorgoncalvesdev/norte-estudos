@@ -95,7 +95,7 @@ Use **Prazos**, o painel de Hoje ou o Planejamento para cadastrar uma prova, tra
 
 ## NORBIT ao seu lado
 
-O mascote acompanha boas-vindas, espera da IA, acerto, incentivo após erro, foco e pausa. As animações respeitam movimento reduzido do aparelho. O tutorial ao vivo agora tem **95 passos em 14 áreas**, incluindo prazos, NORBIT AI, quantidade e dificuldade das questões, respostas comentadas, contexto, consentimento, alarmes, minipainel e janela flutuante. As respostas da IA no tutorial são exemplos locais, sem consumo de cota; as alterações da prática são descartadas ao sair.
+O mascote acompanha boas-vindas, espera da IA, acerto, incentivo após erro, foco e pausa. As animações respeitam movimento reduzido do aparelho. O tutorial ao vivo agora tem **105 passos em 14 áreas**, incluindo prazos, NORBIT AI, quantidade e dificuldade das questões, respostas comentadas, contexto, consentimento, alarmes, minipainel e janela flutuante. As respostas da IA no tutorial são exemplos locais, sem consumo de cota; as alterações da prática são descartadas ao sair.
 
 O novo mascote minimalista tem corpo branco arredondado, olhos simples e pequenas mãos. Ele acena e pisca suavemente; em movimento reduzido permanece estático. [Vídeo de apresentação, 6 segundos](../assets/norbit.mp4).
 
@@ -117,3 +117,17 @@ O menu tem ícones e quatro grupos: Organizar (Hoje, Planejamento, Meu edital e 
 As telas apresentam painéis e gráficos com entradas suaves. Formulários, avisos, opções de resposta e o menu usam feedback consistente; todos os controles continuam disponíveis durante o movimento. Painéis fora da tela só animam quando aparecem, sem adicionar vídeos ou bibliotecas. Os números dos gráficos e seus registros permanecem os mesmos.
 
 Se preferir uma interface estática, ative **reduzir movimento** nas configurações de acessibilidade do aparelho ou navegador. O Norte respeita essa preferência, inclusive quando ela muda durante o uso. As animações de cartões, IA, mascote e tutorial continuam adaptadas a essa configuração.
+
+## Começo rápido, busca e próximos passos
+Em **Hoje**, use **Cabe no seu tempo** para escolher 10, 15, 25, 45 ou 60 minutos. As sugestões priorizam revisões disponíveis, dificuldades em aberto, plano do dia e recomendações, sem repetir assuntos. **Começar** abre uma contagem regressiva. Uma sessão já aberta é preservada. O tempo só conta no histórico depois de registrar a sessão; o plano não muda.
+
+Na barra superior, **Buscar** abre a lupa; também funciona com **Ctrl K** ou **Cmd K**. Digite com ou sem acentos e filtre entre áreas, assuntos, cartões, biblioteca, erros, prazos e conversas da NORBIT AI. Os registros são da preparação atual. Use seta para baixo no campo, navegue pelos resultados e pressione Enter para abrir. Escape fecha a busca. **Limpar** apaga apenas o texto. São exibidos até 50 resultados; refine o termo quando necessário.
+
+Em **Questões e erros**, **Agendar revisão** coloca o assunto da dificuldade para amanhã. Uma revisão já marcada para uma data anterior é preservada. O aviso permite desfazer. O erro permanece em aberto; agendar não registra estudo. Associe o erro a um assunto para usar a ação.
+
+Em **Prazos**, **Exportar para calendário** baixa um arquivo ICS com todos os prazos em aberto, como eventos de dia inteiro. Importe no calendário que você usa. Esta é uma exportação manual, sem sincronização automática; importar novamente pode duplicar eventos. Prazos concluídos ficam fora do arquivo.
+
+Em **Evolução**, **Seu ritmo, em perspectiva** compara os últimos 7 dias, incluindo hoje, aos 7 dias anteriores: minutos, questões e acerto. Este balanço sempre usa esses períodos, mesmo quando o gráfico está em outro filtro. O acerto só é comparado quando ambos os períodos têm questões registradas. Quantidade e dificuldade diferentes podem afetar os resultados.
+
+O **tema escuro** usa camadas distintas para menu, painéis e campos. Alterne pelo menu ou nas preferências. A lupa anima ao passar o cursor ou receber foco, sem animação contínua. Todos esses recursos estão no tutorial ao vivo: Hoje, Questões e erros, Prazos, Evolução e Ajustes, agora com **105 passos em 14 áreas**.
+
