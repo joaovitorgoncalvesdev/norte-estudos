@@ -1,7 +1,7 @@
 import { readFile, writeFile } from 'node:fs/promises';
 
 const root = new URL('../', import.meta.url);
-const [template, css, js, favicon, aiJS, aiCSS, timerJS, timerCSS, profileJS, profileCSS, mascot] = await Promise.all([
+const [template, css, js, favicon, aiJS, aiCSS, timerJS, timerCSS, profileJS, profileCSS, mascot, chatJS, motionJS, chatCSS] = await Promise.all([
   readFile(new URL('src/index.template.html', root), 'utf8'),
   readFile(new URL('src/styles.css', root), 'utf8'),
   readFile(new URL('src/app.js', root), 'utf8'),
@@ -13,11 +13,14 @@ const [template, css, js, favicon, aiJS, aiCSS, timerJS, timerCSS, profileJS, pr
   readFile(new URL('src/profile.js', root), 'utf8'),
   readFile(new URL('src/profile.css', root), 'utf8'),
   readFile(new URL('assets/norbit.webp', root)),
+  readFile(new URL('src/chats.js', root), 'utf8'),
+  readFile(new URL('src/card-motion.js', root), 'utf8'),
+  readFile(new URL('src/chats.css', root), 'utf8'),
 ]);
 if (!template.includes('/* STYLES */') || !template.includes('/* SCRIPT */')) {
   throw new Error('Marcadores de CSS ou JavaScript ausentes no template.');
 }
-const bundledJS = js.replace("go(location.hash.slice(1)||'hoje');", () => aiJS + "\n" + timerJS + "\n" + profileJS.replace('__NORBIT_MASCOT__','data:image/webp;base64,'+mascot.toString('base64')) + "\ngo(location.hash.slice(1)||'hoje');");
-const html = template.replace('/* STYLES */', () => css+'\n'+aiCSS+'\n'+timerCSS+'\n'+profileCSS).replace('/* SCRIPT */', () => bundledJS).replace('__FAVICON__', () => 'data:image/svg+xml,' + encodeURIComponent(favicon.replace(/\r\n/g, '\n')));
+const bundledJS = js.replace("go(location.hash.slice(1)||'hoje');", () => aiJS + "\n" + timerJS + "\n" + profileJS.replace('__NORBIT_MASCOT__','data:image/webp;base64,'+mascot.toString('base64')) + "\n" + chatJS + "\n" + motionJS + "\ngo(location.hash.slice(1)||'hoje');");
+const html = template.replace('/* STYLES */', () => css+'\n'+aiCSS+'\n'+timerCSS+'\n'+profileCSS+'\n'+chatCSS).replace('/* SCRIPT */', () => bundledJS).replace('__FAVICON__', () => 'data:image/svg+xml,' + encodeURIComponent(favicon.replace(/\r\n/g, '\n')));
 await writeFile(new URL('index.html', root), html, 'utf8');
 console.log('index.html atualizado.');

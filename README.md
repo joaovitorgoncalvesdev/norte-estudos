@@ -8,7 +8,7 @@ Um painel pessoal para organizar sua preparação, planejamento, foco, questões
 
 ## Funcionalidades
 
-- Tutorial ao vivo com 91 passos em 14 áreas, com controles destacados, cliques guiados e progresso salvo.
+- Tutorial ao vivo com 95 passos em 14 áreas, com controles destacados, cliques guiados e progresso salvo.
 - Favicon com a marca Norte, incluído no HTML para uso offline.
 - Visão do dia com metas, tarefas e revisões.
 - Planejamento conforme disponibilidade, prioridades e desempenho.
@@ -77,3 +77,13 @@ O Norte oferece explicações, cartões editáveis e questões de treino com NOR
 Um companheiro minimalista com movimentos suaves de boas-vindas, espera, acerto, incentivo, foco e pausa. As animações respeitam movimento reduzido. [Assistir ao vídeo do mascote](assets/norbit.mp4).
 
 A criação guiada de perfis foi retirada. Novas preparações usam o formulário simples; os estudos existentes continuam preservados.
+
+
+## Conversas salvas e cartões com movimento
+Na NORBIT AI, cada primeira mensagem abre uma conversa por assunto. Use Conversas no celular ou a lista lateral no computador para buscar e reabrir um chat. Você pode renomear, excluir e desfazer a exclusão. Os chats ficam neste navegador, separados por preparação, e entram no backup exportado; não são sincronizados entre aparelhos.
+
+Responda normalmente às perguntas do tutor: o histórico recente é enviado com a nova mensagem, mantendo o assunto. Até 12 mensagens recentes, com limite de tamanho, são usadas como contexto; detalhes antigos de chats muito longos podem ficar de fora. Confira as respostas no seu material.
+
+Não há caixa de autorização: clicar em Enviar autoriza o envio da mensagem e do histórico recente daquele chat. O resumo da preparação continua opcional. A verificação humana só aparece quando você pede uma resposta, e o envio segue automaticamente depois que ela termina. Você pode cancelar enquanto verifica. As cotas existentes continuam valendo.
+
+Nos flashcards, clique ou use espaço para virar. O movimento pode ser invertido antes de terminar, e a próxima pergunta entra suavemente. Com movimento reduzido, a troca é estática. A avaliação e os intervalos de revisão continuam iguais.
