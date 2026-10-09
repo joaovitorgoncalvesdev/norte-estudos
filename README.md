@@ -87,3 +87,7 @@ Responda normalmente às perguntas do tutor: o histórico recente é enviado com
 Não há caixa de autorização: clicar em Enviar autoriza o envio da mensagem e do histórico recente daquele chat. O resumo da preparação continua opcional. A verificação humana só aparece quando você pede uma resposta, e o envio segue automaticamente depois que ela termina. Você pode cancelar enquanto verifica. As cotas existentes continuam valendo.
 
 Nos flashcards, clique ou use espaço para virar. O movimento pode ser invertido antes de terminar, e a próxima pergunta entra suavemente. Com movimento reduzido, a troca é estática. A avaliação e os intervalos de revisão continuam iguais.
+
+
+## Menu por atividade
+O menu tem ícones e quatro grupos: Organizar (Hoje, Planejamento, Meu edital e Prazos), Estudar (Foco, NORBIT AI, Questões, Simulados, Revisões e Cartões), Acompanhar (Evolução e Histórico) e Recursos (Biblioteca, Tutorial e Ajustes). O destaque mostra a tela atual. Os contadores de revisões e cartões indicam filas separadas. No celular, abra Menu; escolha uma área ou use Escape para fechar. A lista rola sem esconder sua preparação e os controles de aparência.
