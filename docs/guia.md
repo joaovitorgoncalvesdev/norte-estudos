@@ -176,3 +176,8 @@ As notas de assuntos e concentração são salvas automaticamente. Confira o ind
 Na **NORBIT**, escolha a tarefa junto da mensagem, o assunto da conversa, a fonte e o estilo da explicação. Essas opções ficam no chat. Busque respostas guardadas antes de enviar um novo pedido. Você pode transformar uma explicação em cartão, revisão ou atividade somente depois de editar e confirmar a prévia. Horários ocupados são rejeitados.
 
 **Sinalizar um problema** guarda uma dúvida local e exclui aquela resposta da reutilização automática. Não envia denúncia a terceiros. Quando a IA está indisponível, continue com respostas guardadas, cartões e questões locais.
+
+
+### Destaque do tutorial
+
+A borda acompanha a posição visível do controle durante abertura de formulários, rolagem e redimensionamento. Ao rolar o controle totalmente para fora da área visível, a borda é ocultada até ele reaparecer. A caixa de instruções permanece acessível para continuar ou sair.
